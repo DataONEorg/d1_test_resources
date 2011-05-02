@@ -1,0 +1,2 @@
+A simple resource file for testing 
+this.getClass().getResourceAsStream() mechanism.
