@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<d1:subjectInfo xmlns:d1="http://ns.dataone.org/service/types/v1">
+	<person>
+		<subject>CN=testGroupie,DC=dataone,DC=org</subject>
+		<givenName>testGroupie_givenName</givenName>
+		<familyName>testGroupie_familyName</familyName>
+		<isMemberOf>CN=testGroup,DC=dataone,DC=org</isMemberOf>
+	</person>
+	<group>
+		<subject>CN=testGroup,DC=dataone,DC=org</subject>
+		<groupName>testGroup_groupName</groupName>
+		<hasMember>CN=testGroupie,DC=dataone,DC=org</hasMember>
+		<rightsHolder>CN=testGroupie,DC=dataone,DC=org</rightsHolder>
+	</group>
+</d1:subjectInfo>
