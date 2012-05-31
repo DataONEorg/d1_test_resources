@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.dataone</groupId>
   <artifactId>d1_test_resources</artifactId>
-  <version>1.0.0-RC4</version>
+  <version>1.0.0-RC4-SNAPSHOT</version>
   <name>DataONE Test Resources Package</name>
   <description>Set of common test resources available to all DataONE packages for both unit and integration testing</description>
   <url>http://dataone.org</url>
