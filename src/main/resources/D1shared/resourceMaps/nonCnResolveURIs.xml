@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:cito="http://purl.org/spar/cito/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:ore="http://www.openarchives.org/ore/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs1="http://www.w3.org/2001/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://129.24.63.115/apps/dataone/v1/object/7f115193-ea2b-4486-ba72-afe51008dc71">
+    <dcterms:identifier>7f115193-ea2b-4486-ba72-afe51008dc71</dcterms:identifier>
+    <cito:isDocumentedBy rdf:resource="http://129.24.63.115/apps/dataone/v1/object/5760e5ef-efef-4c97-b393-79850d1b67b3"/>
+    <dcterms:description>Data object (7f115193-ea2b-4486-ba72-afe51008dc71)</dcterms:description>
+    <dc:title>Dataset: 5760e5ef-efef-4c97-b393-79850d1b67b3</dc:title>
+  </rdf:Description>
+
+
+
+
+  <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/Aggregation">
+    <rdfs1:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
+    <rdfs1:label>Aggregation</rdfs1:label>
+  </rdf:Description>
+
+
+
+  <rdf:Description rdf:about="http://129.24.63.115/apps/dataone/v1/object/5760e5ef-efef-4c97-b393-79850d1b67b3">
+    <dcterms:identifier>5760e5ef-efef-4c97-b393-79850d1b67b3</dcterms:identifier>
+    <dc:title>Metadata: 5760e5ef-efef-4c97-b393-79850d1b67b3</dc:title>
+    <dcterms:description>Science metadata object (5760e5ef-efef-4c97-b393-79850d1b67b3) for Data object (7f115193-ea2b-4486-ba72-afe51008dc71)</dcterms:description>
+    <cito:documents rdf:resource="http://129.24.63.115/apps/dataone/v1/object/7f115193-ea2b-4486-ba72-afe51008dc71"/>
+  </rdf:Description>
+
+
+
+  <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/ResourceMap">
+    <rdfs1:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
+    <rdfs1:label>ResourceMap</rdfs1:label>
+  </rdf:Description>
+
+
+
+  <rdf:Description rdf:about="http://129.24.63.115/apps/dataone/v1/object/28335b70-8d10-49f7-910f-9a84a14703d4">
+    <dcterms:identifier>28335b70-8d10-49f7-910f-9a84a14703d4</dcterms:identifier>
+    <dcterms:creator rdf:resource="http://foresite-toolkit.googlecode.com/#pythonAgent"/>
+    <dcterms:modified>2012-10-25T16:51:47Z</dcterms:modified>
+    <dc:format></dc:format>
+    <dc:format>http://www.openarchives.org/ore/terms/ResourceMap</dc:format>
+    <ore:describes rdf:resource="http://129.24.63.115/apps/dataone/v1/object/GStore-Aggregate"/>
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/ResourceMap"/>
+    <dcterms:created>2012-10-25T16:51:47Z</dcterms:created>
+  </rdf:Description>
+
+
+
+  <rdf:Description rdf:about="http://foresite-toolkit.googlecode.com/#pythonAgent">
+    <foaf:mbox>foresite@googlegroups.com</foaf:mbox>
+    <foaf:name>Foresite Toolkit (Python)</foaf:name>
+  </rdf:Description>
+
+
+
+  <rdf:Description rdf:about="http://129.24.63.115/apps/dataone/v1/object/GStore-Aggregate">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+    <ore:aggregates rdf:resource="http://129.24.63.115/apps/dataone/v1/object/5760e5ef-efef-4c97-b393-79850d1b67b3"/>
+    <ore:aggregates rdf:resource="http://129.24.63.115/apps/dataone/v1/object/7f115193-ea2b-4486-ba72-afe51008dc71"/>
+  </rdf:Description>
+</rdf:RDF>

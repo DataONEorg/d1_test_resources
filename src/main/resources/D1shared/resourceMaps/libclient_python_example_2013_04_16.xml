@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:cito="http://purl.org/spar/cito/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:ore="http://www.openarchives.org/ore/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs1="http://www.w3.org/2001/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/ResourceMap">
+    <rdfs1:label>ResourceMap</rdfs1:label>
+    <rdfs1:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/Aggregation">
+    <rdfs1:label>Aggregation</rdfs1:label>
+    <rdfs1:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cn.dataone.org/cn/v1/resolve/test01_file_a.2.txt">
+    <cito:isDocumentedBy rdf:resource="https://cn.dataone.org/cn/v1/resolve/test01_file_a.1.txt"/>
+    <dcterms:identifier>test01_file_a.2.txt</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cn.dataone.org/cn/v1/resolve/test01_file_a.1.txt">
+    <cito:documents rdf:resource="https://cn.dataone.org/cn/v1/resolve/test01_file_a.2.txt"/>
+    <dcterms:identifier>test01_file_a.1.txt</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://foresite-toolkit.googlecode.com/#pythonAgent">
+    <foaf:name>Foresite Toolkit (Python)</foaf:name>
+    <foaf:mbox>foresite@googlegroups.com</foaf:mbox>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cn.dataone.org/cn/v1/resolve/test01_file_a#aggregation">
+    <ore:aggregates rdf:resource="https://cn.dataone.org/cn/v1/resolve/test01_file_a.1.txt"/>
+    <ore:aggregates rdf:resource="https://cn.dataone.org/cn/v1/resolve/test01_file_a.2.txt"/>
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cn.dataone.org/cn/v1/resolve/test01_file_a">
+    <dc:format>application/rdf+xml</dc:format>
+    <dcterms:modified>2013-04-16T19:43:16Z</dcterms:modified>
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/ResourceMap"/>
+    <dcterms:created>2013-04-16T19:43:16Z</dcterms:created>
+    <dcterms:creator rdf:resource="http://foresite-toolkit.googlecode.com/#pythonAgent"/>
+    <dcterms:identifier>test01_file_a</dcterms:identifier>
+    <ore:describes rdf:resource="https://cn.dataone.org/cn/v1/resolve/test01_file_a#aggregation"/>
+  </rdf:Description>
+</rdf:RDF>
