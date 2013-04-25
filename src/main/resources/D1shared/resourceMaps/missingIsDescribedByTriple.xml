@@ -1,0 +1,43 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:ore="http://www.openarchives.org/ore/terms/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:j.0="http://purl.org/spar/cito/" > 
+  <rdf:Description rdf:about="https://cn-dev.test.dataone.org/cn/v1/resolve/r_test3.package.2012120601491354790946#aggregation">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+    <dc:title>DataONE Aggregation</dc:title>
+    <ore:aggregates rdf:resource="https://cn-dev.test.dataone.org/cn/v1/resolve/r_test3.scimeta.2012120601491354790946"/>
+    <ore:aggregates rdf:resource="https://cn-dev.test.dataone.org/cn/v1/resolve/r_test3.scidata.1.2012120601491354790946"/>
+    <ore:aggregates rdf:resource="https://cn-dev.test.dataone.org/cn/v1/resolve/r_test3.scidata.2.2012120601491354790946"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cn-dev.test.dataone.org/cn/v1/resolve/r_test3.scimeta.2012120601491354790946">
+    <ore:isAggregatedBy>https://cn-dev.test.dataone.org/cn/v1/resolve/r_test3.package.2012120601491354790946#aggregation</ore:isAggregatedBy>
+    <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_test3.scimeta.2012120601491354790946</dcterms:identifier>
+    <j.0:documents rdf:resource="https://cn-dev.test.dataone.org/cn/v1/resolve/r_test3.scidata.1.2012120601491354790946"/>
+    <j.0:documents rdf:resource="https://cn-dev.test.dataone.org/cn/v1/resolve/r_test3.scidata.2.2012120601491354790946"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Java libclient</foaf:name>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cn-dev.test.dataone.org/cn/v1/resolve/r_test3.scidata.2.2012120601491354790946">
+    <ore:isAggregatedBy>https://cn-dev.test.dataone.org/cn/v1/resolve/r_test3.package.2012120601491354790946#aggregation</ore:isAggregatedBy>
+    <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_test3.scidata.2.2012120601491354790946</dcterms:identifier>
+    <j.0:isDocumentedBy rdf:resource="https://cn-dev.test.dataone.org/cn/v1/resolve/r_test3.scimeta.2012120601491354790946"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cn-dev.test.dataone.org/cn/v1/resolve/r_test3.package.2012120601491354790946">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-12-06T01:49:06-0900</dcterms:modified>
+    <ore:describes rdf:resource="https://cn-dev.test.dataone.org/cn/v1/resolve/r_test3.package.2012120601491354790946#aggregation"/>
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/ResourceMap"/>
+    <dc:creator rdf:nodeID="A0"/>
+    <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_test3.package.2012120601491354790946</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cn-dev.test.dataone.org/cn/v1/resolve/r_test3.scidata.1.2012120601491354790946">
+    <ore:isAggregatedBy>https://cn-dev.test.dataone.org/cn/v1/resolve/r_test3.package.2012120601491354790946#aggregation</ore:isAggregatedBy>
+    <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_test3.scidata.1.2012120601491354790946</dcterms:identifier>
+    <j.0:isDocumentedBy rdf:resource="https://cn-dev.test.dataone.org/cn/v1/resolve/r_test3.scimeta.2012120601491354790946"/>
+  </rdf:Description>
+</rdf:RDF>
