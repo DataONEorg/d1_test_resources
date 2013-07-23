@@ -1,0 +1,90 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:ore="http://www.openarchives.org/ore/terms/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:j.0="http://purl.org/spar/cito/" > 
+  <rdf:Description rdf:about="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_7">
+    <ore:isAggregatedBy>http://cn-dev.dataone.org/cn/v1/resolve/MonolithicPackage#aggregation</ore:isAggregatedBy>
+    <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MonolithicData_7</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_6">
+    <ore:isAggregatedBy>http://cn-dev.dataone.org/cn/v1/resolve/MonolithicPackage#aggregation</ore:isAggregatedBy>
+    <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MonolithicData_6</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicMetadata">
+    <j.0:documents rdf:resource="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_3"/>
+    <j.0:documents rdf:resource="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_10"/>
+    <j.0:documents rdf:resource="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_2"/>
+    <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MonolithicMetadata</dcterms:identifier>
+    <j.0:documents rdf:resource="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_6"/>
+    <j.0:documents rdf:resource="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_1"/>
+    <j.0:documents rdf:resource="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_8"/>
+    <j.0:documents rdf:resource="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_4"/>
+    <j.0:documents rdf:resource="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_9"/>
+    <j.0:documents rdf:resource="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_5"/>
+    <ore:isAggregatedBy>http://cn-dev.dataone.org/cn/v1/resolve/MonolithicPackage#aggregation</ore:isAggregatedBy>
+    <j.0:documents rdf:resource="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_5">
+    <ore:isAggregatedBy>http://cn-dev.dataone.org/cn/v1/resolve/MonolithicPackage#aggregation</ore:isAggregatedBy>
+    <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MonolithicData_5</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_8">
+    <ore:isAggregatedBy>http://cn-dev.dataone.org/cn/v1/resolve/MonolithicPackage#aggregation</ore:isAggregatedBy>
+    <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MonolithicData_8</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicPackage#aggregation">
+    <ore:aggregates rdf:resource="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_8"/>
+    <ore:aggregates rdf:resource="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_1"/>
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+    <ore:aggregates rdf:resource="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_2"/>
+    <ore:isDescribedBy rdf:resource="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicPackage"/>
+    <ore:aggregates rdf:resource="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_10"/>
+    <dc:title>DataONE Aggregation</dc:title>
+    <ore:aggregates rdf:resource="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_5"/>
+    <ore:aggregates rdf:resource="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_9"/>
+    <ore:aggregates rdf:resource="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_6"/>
+    <ore:aggregates rdf:resource="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_3"/>
+    <ore:aggregates rdf:resource="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_7"/>
+    <ore:aggregates rdf:resource="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicMetadata"/>
+    <ore:aggregates rdf:resource="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_3">
+    <ore:isAggregatedBy>http://cn-dev.dataone.org/cn/v1/resolve/MonolithicPackage#aggregation</ore:isAggregatedBy>
+    <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MonolithicData_3</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_4">
+    <ore:isAggregatedBy>http://cn-dev.dataone.org/cn/v1/resolve/MonolithicPackage#aggregation</ore:isAggregatedBy>
+    <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MonolithicData_4</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_9">
+    <ore:isAggregatedBy>http://cn-dev.dataone.org/cn/v1/resolve/MonolithicPackage#aggregation</ore:isAggregatedBy>
+    <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MonolithicData_9</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_1">
+    <ore:isAggregatedBy>http://cn-dev.dataone.org/cn/v1/resolve/MonolithicPackage#aggregation</ore:isAggregatedBy>
+    <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MonolithicData_1</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_10">
+    <ore:isAggregatedBy>http://cn-dev.dataone.org/cn/v1/resolve/MonolithicPackage#aggregation</ore:isAggregatedBy>
+    <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MonolithicData_10</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicData_2">
+    <ore:isAggregatedBy>http://cn-dev.dataone.org/cn/v1/resolve/MonolithicPackage#aggregation</ore:isAggregatedBy>
+    <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MonolithicData_2</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicPackage">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-22T17:53:59.511-06:00</dcterms:modified>
+    <ore:describes rdf:resource="http://cn-dev.dataone.org/cn/v1/resolve/MonolithicPackage#aggregation"/>
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/ResourceMap"/>
+    <dc:creator rdf:nodeID="A0"/>
+    <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MonolithicPackage</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Java libclient</foaf:name>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+  </rdf:Description>
+</rdf:RDF>
