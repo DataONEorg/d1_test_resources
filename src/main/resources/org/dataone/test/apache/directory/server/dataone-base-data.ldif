@@ -1,0 +1,99 @@
+dn: dc=org
+objectclass: dcObject
+objectclass: organization
+o: Organization
+dc: org
+ 
+
+dn: dc=dataone,dc=org
+objectclass: dcObject
+objectclass: organization
+o: DataONE
+administrativeRole: accessControlSpecificArea
+dc: dataone
+
+dn: dc=cilogon,dc=org
+objectclass: dcObject
+objectclass: organization
+o: CILogon
+administrativeRole: accessControlSpecificArea
+dc: cilogon
+
+dn: cn=dataoneAuthorizationRequirementsACISubentry,dc=dataone,dc=org
+objectclass: top
+objectclass: subentry
+objectclass: accessControlSubentry
+cn: dataoneAuthorizationRequirementsACISubentry
+subtreeSpecification: {}
+prescriptiveACI: {
+    identificationTag "d1DirectoryManagerFullAccessACI",
+    precedence 11,
+    authenticationLevel simple,
+    itemOrUserFirst userFirst:
+    {
+        userClasses
+        {
+            name { "cn=admin,dc=dataone,dc=org" }
+        },
+        userPermissions
+        { 
+            {
+                protectedItems
+                {
+                    entry, allUserAttributeTypesAndValues
+                },
+                grantsAndDenials
+                {
+                    grantAdd, grantDiscloseOnError, grantRead,
+                    grantRemove, grantBrowse, grantExport, grantImport,
+                    grantModify, grantRename, grantReturnDN,
+                    grantCompare, grantFilterMatch, grantInvoke
+                } 
+            }
+        }
+    } 
+ }
+
+dn: cn=cilogonAuthorizationRequirementsACISubentry,dc=cilogon,dc=org
+objectclass: top
+objectclass: subentry
+objectclass: accessControlSubentry
+cn: cilogonAuthorizationRequirementsACISubentry
+subtreeSpecification: {}
+prescriptiveACI: {
+    identificationTag "ciDirectoryManagerFullAccessACI",
+    precedence 11,
+    authenticationLevel simple,
+    itemOrUserFirst userFirst:
+    {
+        userClasses
+        {
+            name { "cn=admin,dc=dataone,dc=org" }
+        },
+        userPermissions
+        { 
+            {
+                protectedItems
+                {
+                    entry, allUserAttributeTypesAndValues
+                },
+                grantsAndDenials
+                {
+                    grantAdd, grantDiscloseOnError, grantRead,
+                    grantRemove, grantBrowse, grantExport, grantImport,
+                    grantModify, grantRename, grantReturnDN,
+                    grantCompare, grantFilterMatch, grantInvoke
+                } 
+            }
+        }
+    } 
+ }
+
+dn: cn=admin,dc=dataone,dc=org
+objectClass: uidObject
+objectClass: person
+objectClass: top
+uid: dataone-admin
+cn: admin
+sn: Dataone
+userPassword: password
