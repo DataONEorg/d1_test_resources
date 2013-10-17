@@ -546,6 +546,23 @@ m-substr: caseIgnoreSubstringsMatch
 m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
 m-length: 1024
 
+dn: m-oid=1.3.6.1.4.1.37951.2.3.35, ou=attributetypes, cn=dataone, ou=schema
+objectclass: metaAttributeType
+objectclass: metaTop
+objectclass: top
+m-oid: 1.3.6.1.4.1.37951.2.3.35
+m-name: d1NodeAggregateLogs
+m-description:: U3RhdGUgb2YgdGhlIHByb2Nlc3NpbmcgZGFlbW9uLiAgQ3VycmVudGx5IHRoaXMg
+ YXR0cmlidXRlCiAgICAgICAgaXMgb25seSBzaWduaWZpY2FudCBmb3IgbG9nZ2luZy4gSWYgaXQgYmV
+ jb21lcyBpbXBvcnRhbnQgZm9yIG90aGVyCiAgICAgICAgY29tcG9uZW50cyB0aGVuIHRoZSBjb21tdW
+ 5pY2F0aW9uIGJldHdlZW4gY29tcG9uZW50cyB3aWxsIG5lZWQKICAgICAgICB0byBiZSBhZGRyZXNzZ
+ WQuICBJdHMgdmFsdWVzIG1heSBiZSBlaXRoZXIgT2ZmbGluZSwgUmVjb3ZlcnksIG9yIEFjdGl2ZQ==
+ 
+m-equality: caseExactMatch
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
+m-length: 8
+m-singleValue: TRUE
+
 dn: ou=comparators, cn=dataone, ou=schema
 objectclass: organizationalUnit
 objectclass: top
@@ -636,6 +653,7 @@ m-may: d1ReplicationPolicyMaxObjectSize
 m-may: d1ReplicationPolicySpaceAllocated
 m-may: d1ReplicationPolicyAllowedNode
 m-may: d1ReplicationPolicyAllowedObjectFormat
+m-may: d1NodeAggregateLogs
 
 dn: m-oid=1.3.6.1.4.1.37951.2.4.2, ou=objectclasses, cn=dataone, ou=schema
 objectclass: metaObjectClass
