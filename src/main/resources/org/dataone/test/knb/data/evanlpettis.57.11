@@ -1,0 +1,1042 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml packageId="evanlpettis.57.11" system="knb" xmlns:eml="eml://ecoinformatics.org/eml-2.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.0 eml.xsd"> <access authSystem="knb" order="allowFirst"><allow><principal>public</principal>
+<permission>read</permission>
+</allow>
+</access>
+<dataset> <title>Biogeographic Oyster Study: Monitoring Physical Data</title>
+ <creator id="1323712646894"><individualName><givenName>Michael</givenName>
+ <surName>Piehler</surName>
+ </individualName>
+ <organizationName>University of North Carolina at Chapel Hill</organizationName>
+ <address><deliveryPoint>3431 Arendell Street</deliveryPoint>
+ <city>Morehead City</city>
+ <administrativeArea>NC</administrativeArea>
+ <postalCode>28557</postalCode>
+ </address>
+ <phone phonetype="voice">(252) 726-6841, X160</phone>
+ <electronicMailAddress>mpiehler@email.unc.edu</electronicMailAddress>
+ </creator>
+ <creator id="1321474931885"><individualName><givenName>Jonathan</givenName>
+ <surName>Grabowski</surName>
+ </individualName>
+ <organizationName>Gulf of Maine Research Institute</organizationName>
+ <address><deliveryPoint>350 Commercial St.</deliveryPoint>
+ <city>Portland</city>
+ <administrativeArea>ME</administrativeArea>
+ <postalCode>04101</postalCode>
+ </address>
+ <phone phonetype="voice">(781) 581-7370, x337</phone>
+ <electronicMailAddress>j.grabowski@neu.edu</electronicMailAddress>
+ </creator>
+ <creator id="1321474518623"><individualName><givenName>David</givenName>
+ <surName>Kimbro</surName>
+ </individualName>
+ <organizationName>Florida State University Coastal &amp; Marine Lab</organizationName>
+ <address><deliveryPoint>3618 Highway 98</deliveryPoint>
+ <city>St. Teresa</city>
+ <administrativeArea>FL</administrativeArea>
+ <postalCode>32358-2702</postalCode>
+ </address>
+ <phone phonetype="voice">(850) 697-4092</phone>
+ <phone phonetype="fax">(850) 697-3822</phone>
+ <electronicMailAddress>dkimbro@bio.fsu.edu</electronicMailAddress>
+ </creator>
+ <creator id="1323712260138"><individualName><givenName>Randall</givenName>
+ <surName>Hughes</surName>
+ </individualName>
+ <organizationName>Florida State University Coastal &amp; Marine Lab</organizationName>
+ <address><deliveryPoint>3618 Hwy 98</deliveryPoint>
+ <city>St. Teresa</city>
+ <administrativeArea>FL</administrativeArea>
+ <postalCode>32358</postalCode>
+ </address>
+ <phone phonetype="voice">32358</phone>
+ <electronicMailAddress>rhughes@bio.fsu.edu</electronicMailAddress>
+ </creator>
+ <creator id="1321474613182"><individualName><givenName>Jeb</givenName>
+ <surName>Byers</surName>
+ </individualName>
+ <organizationName>University of Georgia Odum School of Ecology</organizationName>
+ <address><deliveryPoint>140 E. Green St.</deliveryPoint>
+ <city>Athens</city>
+ <administrativeArea>GA</administrativeArea>
+ <postalCode>30602-2202</postalCode>
+ </address>
+ <phone phonetype="voice">(706) 583-0012</phone>
+ <electronicMailAddress>jebyers@uga.edu</electronicMailAddress>
+ </creator>
+ <keywordSet><keyword>epifauna</keyword>
+ <keyword>quadrat</keyword>
+ <keyword>oyster</keyword>
+ <keyword>invertebrates</keyword>
+ </keywordSet>
+ <intellectualRights><para>Obtain permission from owner(s).</para>
+ </intellectualRights>
+ <coverage> <temporalCoverage><rangeOfDates><beginDate><calendarDate>2010-08-08</calendarDate>
+ </beginDate>
+ <endDate><calendarDate>2010-08-14</calendarDate>
+ </endDate>
+ </rangeOfDates>
+ </temporalCoverage>
+ <taxonomicCoverage><taxonomicClassification><taxonRankName>Class</taxonRankName>
+ <taxonRankValue>Bivalvia</taxonRankValue>
+ </taxonomicClassification>
+ <taxonomicClassification><taxonRankName>Class</taxonRankName>
+ <taxonRankValue>Decapoda</taxonRankValue>
+ </taxonomicClassification>
+ <taxonomicClassification><taxonRankName>Class</taxonRankName>
+ <taxonRankValue>Polychaeta</taxonRankValue>
+ </taxonomicClassification>
+ <taxonomicClassification><taxonRankName>Order</taxonRankName>
+ <taxonRankValue>Amphipoda</taxonRankValue>
+ </taxonomicClassification>
+ </taxonomicCoverage>
+ <geographicCoverage><geographicDescription>Gulf Coast of Florida to Atlantic Coast of North Carolina</geographicDescription>
+ <boundingCoordinates><westBoundingCoordinate>-84.3696</westBoundingCoordinate>
+ <eastBoundingCoordinate>-76.61748</eastBoundingCoordinate>
+ <northBoundingCoordinate>34.69512</northBoundingCoordinate>
+ <southBoundingCoordinate>29.15251</southBoundingCoordinate>
+ </boundingCoordinates>
+ </geographicCoverage>
+ </coverage>
+ <contact><references>1323712646894</references>
+ </contact>
+ <contact><references>1323712260138</references>
+ </contact>
+ <contact><references>1321474518623</references>
+ </contact>
+ <contact><references>1321474613182</references>
+ </contact>
+ <contact><references>1321474931885</references>
+ </contact>
+ <project><title>Collaborative Research: the influence of predators on community structure and resultant ecosystem functioning at a biogeographic scale</title>
+ <personnel><references>1321474518623</references>
+ <role>Principal Investigator</role>
+ </personnel>
+ <personnel><references>1321474613182</references>
+ <role>Principal Investigator</role>
+ </personnel>
+ <personnel><references>1321474931885</references>
+ <role>Principal Investigator</role>
+ </personnel>
+ <personnel><references>1323712646894</references>
+ <role>Principal Investigator</role>
+ </personnel>
+ <personnel><references>1323712260138</references>
+ <role>Principal Investigator</role>
+ </personnel>
+ <funding><para>NSF Biological Oceanography Division</para>
+ </funding>
+ </project>
+ <dataTable id="1324585682077"><entityName>Water Sample Data</entityName>
+ <entityDescription>Data on water samples taken at 6-week intervals</entityDescription>
+ <physical id="1324584336014"><objectName>WaterSamples.csv</objectName>
+ <size unit="byte">15882</size>
+ <dataFormat><textFormat><numHeaderLines>1</numHeaderLines>
+ <recordDelimiter>#x0A</recordDelimiter>
+ <attributeOrientation>column</attributeOrientation>
+ <simpleDelimited><fieldDelimiter>,</fieldDelimiter>
+ </simpleDelimited>
+ </textFormat>
+ </dataFormat>
+ <distribution><online><url>ecogrid://knb/evanlpettis.59.1</url>
+ </online>
+ <access authSystem="knb" order="denyFirst"><deny><principal>public</principal>
+<permission>read</permission>
+</deny>
+</access>
+</distribution>
+ </physical>
+ <attributeList><attribute id="1324585682078"><attributeName>Region</attributeName>
+ <attributeDefinition>Study region/state; the area covered by each individual research team</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><enumeratedDomain><codeDefinition><code>FL</code>
+ <definition>Florida</definition>
+ </codeDefinition>
+ <codeDefinition><code>GA/SC</code>
+ <definition>Georgia/South Carolina</definition>
+ </codeDefinition>
+ <codeDefinition><code>NC</code>
+ <definition>North Carolina</definition>
+ </codeDefinition>
+ </enumeratedDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324585682081"><attributeName>Site</attributeName>
+ <attributeDefinition>Study site/estuary within each region; Four sites per region</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><enumeratedDomain><codeDefinition><code>SA</code>
+ <definition>Saint Augustine</definition>
+ </codeDefinition>
+ <codeDefinition><code>JV</code>
+ <definition>Jacksonville</definition>
+ </codeDefinition>
+ <codeDefinition><code>AH</code>
+ <definition>Alligator Harbor</definition>
+ </codeDefinition>
+ <codeDefinition><code>CK</code>
+ <definition>Cedar Key</definition>
+ </codeDefinition>
+ <codeDefinition><code>SKIO</code>
+ <definition>Skidaway</definition>
+ </codeDefinition>
+ <codeDefinition><code>SAPELO</code>
+ <definition>Sapelo</definition>
+ </codeDefinition>
+ <codeDefinition><code>ACE BASIN</code>
+ <definition>ACE Basine</definition>
+ </codeDefinition>
+ <codeDefinition><code>N. INLET</code>
+ <definition>North Inlet</definition>
+ </codeDefinition>
+ <codeDefinition><code>MM</code>
+ <definition>Middle Marsh</definition>
+ </codeDefinition>
+ <codeDefinition><code>MB</code>
+ <definition>Masonboro</definition>
+ </codeDefinition>
+ <codeDefinition><code>VC</code>
+ <definition>Virgina Creek</definition>
+ </codeDefinition>
+ <codeDefinition><code>LF</code>
+ <definition>Lockwood Folly</definition>
+ </codeDefinition>
+ </enumeratedDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324585682082"><attributeName>Creek No.</attributeName>
+ <attributeDefinition>Subdivision of study site; Two 'creeks' were selected to account for in-site differences</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><enumeratedDomain><codeDefinition><code>1</code>
+ <definition>Creek #1</definition>
+ </codeDefinition>
+ <codeDefinition><code>2</code>
+ <definition>Creek #2</definition>
+ </codeDefinition>
+ </enumeratedDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324585682083"><attributeName>Reef No.</attributeName>
+ <attributeDefinition>Specific oyster reef within each site; Five reefs selected per site</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><enumeratedDomain><codeDefinition><code>1</code>
+ <definition>Reef #1</definition>
+ </codeDefinition>
+ <codeDefinition><code>2</code>
+ <definition>Reef #2</definition>
+ </codeDefinition>
+ <codeDefinition><code>3</code>
+ <definition>Reef #3</definition>
+ </codeDefinition>
+ <codeDefinition><code>4</code>
+ <definition>Reef #4</definition>
+ </codeDefinition>
+ <codeDefinition><code>5</code>
+ <definition>Reef #5</definition>
+ </codeDefinition>
+ </enumeratedDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324585682084"><attributeName>Collection Date (abiotic data)</attributeName>
+ <attributeDefinition>Date that the sample was taken</attributeDefinition>
+ <measurementScale><dateTime><formatString>MM/DD/YYYY</formatString>
+ <dateTimePrecision>0</dateTimePrecision>
+ </dateTime>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324585682085"><attributeName>Salinity</attributeName>
+ <attributeDefinition>Salinity point measurement in parts per thousand</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>dimensionless</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324585682086"><attributeName>Salinity measurement</attributeName>
+ <attributeDefinition>Method used to measure salinity</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><enumeratedDomain><codeDefinition><code>refractometer in field</code>
+ <definition>In-field measurement using a refractometer</definition>
+ </codeDefinition>
+ <codeDefinition><code>refractometer using leftover water samples</code>
+ <definition>Refractometer used after sample was brought back to the lab</definition>
+ </codeDefinition>
+ <codeDefinition><code>YSI in field</code>
+ <definition>In-field measurement using a handheld YSI sonde</definition>
+ </codeDefinition>
+ </enumeratedDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324585682087"><attributeName>Temp C</attributeName>
+ <attributeDefinition>Water temperature point sample</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>celsius</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324585682088"><attributeName>DO (mg/L)</attributeName>
+ <attributeDefinition>Dissolved oxygen level point sample, as measured by a handheld YSI sonde</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>milligramsPerLiter</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324585682089"><attributeName>pH</attributeName>
+ <attributeDefinition>Point measurement of pH</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>dimensionless</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324585682090"><attributeName>Collection Date/Time (water)</attributeName>
+ <attributeDefinition>Date and time that the sample was collected</attributeDefinition>
+ <measurementScale><dateTime><formatString>MM/DD/YYYY hh:mm</formatString>
+ <dateTimePrecision>0</dateTimePrecision>
+ </dateTime>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324585682091"><attributeName>Filtration Date/Time (water) approximate</attributeName>
+ <attributeDefinition>Approximate date and time that the sample was filtered</attributeDefinition>
+ <measurementScale><dateTime><formatString>MM/DD/YYYY hh:mm</formatString>
+ <dateTimePrecision>0</dateTimePrecision>
+ </dateTime>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324585682092"><attributeName>Vol. filtered chl a 1</attributeName>
+ <attributeDefinition>Volume of water filtered for first chlorophyl a sample</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>milliliter</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324585682093"><attributeName>Vol. filtered chl a 2</attributeName>
+ <attributeDefinition>Volume of water filtered for second chlorophyl a sample</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>milliliter</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324585682094"><attributeName>Vol. filtered HPLC</attributeName>
+ <attributeDefinition>Volume of water filtered for HPLC sample</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>milliliter</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324585682095"><attributeName>Water Notes</attributeName>
+ <attributeDefinition>Additional notes about water samples</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><textDomain><definition>Additional notes about water samples</definition>
+ </textDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ </attributeList>
+ <numberOfRecords>167</numberOfRecords>
+ </dataTable>
+ <dataTable id="1324590784976"><entityName>Sediment Samples</entityName>
+ <entityDescription>Data on sediment samples taken at 6-week intervals</entityDescription>
+ <physical id="1324585809570"><objectName>Sediment.csv</objectName>
+ <size unit="byte">13009</size>
+ <dataFormat><textFormat><numHeaderLines>1</numHeaderLines>
+ <recordDelimiter>#x0A</recordDelimiter>
+ <attributeOrientation>column</attributeOrientation>
+ <simpleDelimited><fieldDelimiter>,</fieldDelimiter>
+ </simpleDelimited>
+ </textFormat>
+ </dataFormat>
+ <distribution><online><url>ecogrid://knb/evanlpettis.60.1</url>
+ </online>
+ </distribution>
+ </physical>
+ <attributeList><attribute id="1324590784977"><attributeName>Region</attributeName>
+ <attributeDefinition>Study region/state; the area covered by each individual research team</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><enumeratedDomain><codeDefinition><code>FL</code>
+ <definition>Florida</definition>
+ </codeDefinition>
+ <codeDefinition><code>GA/SC</code>
+ <definition>Georgia/South Carolina</definition>
+ </codeDefinition>
+ </enumeratedDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324590784978"><attributeName>Site</attributeName>
+ <attributeDefinition>Study site/estuary within each region; Four sites per region</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><enumeratedDomain><codeDefinition><code>CK</code>
+ <definition>Cedar Key</definition>
+ </codeDefinition>
+ <codeDefinition><code>SA</code>
+ <definition>Saint Augustine</definition>
+ </codeDefinition>
+ <codeDefinition><code>JV</code>
+ <definition>Jacksonville</definition>
+ </codeDefinition>
+ <codeDefinition><code>AH</code>
+ <definition>Alligator Harbor</definition>
+ </codeDefinition>
+ <codeDefinition><code>SKIO</code>
+ <definition>Skidaway</definition>
+ </codeDefinition>
+ <codeDefinition><code>SAPELO</code>
+ <definition>Sapelo</definition>
+ </codeDefinition>
+ <codeDefinition><code>ACE BASIN</code>
+ <definition>ACE Basin</definition>
+ </codeDefinition>
+ <codeDefinition><code>N. INLET</code>
+ <definition>North Inlet</definition>
+ </codeDefinition>
+ </enumeratedDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324590784979"><attributeName>Reef No.</attributeName>
+ <attributeDefinition>Specific oyster reef within each site; Five reefs selected per site</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><enumeratedDomain><codeDefinition><code>1</code>
+ <definition>Reef #1</definition>
+ </codeDefinition>
+ <codeDefinition><code>2</code>
+ <definition>Reef #2</definition>
+ </codeDefinition>
+ <codeDefinition><code>3</code>
+ <definition>Reef #3</definition>
+ </codeDefinition>
+ <codeDefinition><code>4</code>
+ <definition>Reef #4</definition>
+ </codeDefinition>
+ <codeDefinition><code>5</code>
+ <definition>Reef #5</definition>
+ </codeDefinition>
+ </enumeratedDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324590784980"><attributeName>Creek No.</attributeName>
+ <attributeDefinition>Subdivision of study site; Two 'creeks' were selected to account for in-site differences</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><enumeratedDomain><codeDefinition><code>1</code>
+ <definition>Creek #1</definition>
+ </codeDefinition>
+ <codeDefinition><code>2</code>
+ <definition>Creek #2</definition>
+ </codeDefinition>
+ </enumeratedDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324590784981"><attributeName>Collection Month</attributeName>
+ <attributeDefinition>Month during which sediment samples were collected</attributeDefinition>
+ <measurementScale><dateTime><formatString>Month</formatString>
+ </dateTime>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324590784982"><attributeName>Collection Date</attributeName>
+ <attributeDefinition>Date that sediment samples were collected</attributeDefinition>
+ <measurementScale><dateTime><formatString>MM/DD/YYYY</formatString>
+ <dateTimePrecision>0</dateTimePrecision>
+ </dateTime>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324590784983"><attributeName>Non-reef sediment distance from nearest oysters (m)</attributeName>
+ <attributeDefinition>Distance of off-reef sediment sampling site from nearest patch of oysters</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>meter</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324590784984"><attributeName>Sediment Notes</attributeName>
+ <attributeDefinition>Additional notes about sediment samples</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><textDomain><definition>Additional notes about sediment samples</definition>
+ </textDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ </attributeList>
+ <numberOfRecords>197</numberOfRecords>
+ </dataTable>
+ <dataTable id="1324592734244"><entityName>SOM Data</entityName>
+ <entityDescription>Table of data relavant to quantifying sediment organic matter via ash-free dry weight</entityDescription>
+ <physical id="1324591299943"><objectName>SOM.csv</objectName>
+ <size unit="byte">113132</size>
+ <dataFormat><textFormat><numHeaderLines>1</numHeaderLines>
+ <recordDelimiter>#x0A</recordDelimiter>
+ <attributeOrientation>column</attributeOrientation>
+ <simpleDelimited><fieldDelimiter>,</fieldDelimiter>
+ </simpleDelimited>
+ </textFormat>
+ </dataFormat>
+ <distribution><online><url>ecogrid://knb/evanlpettis.61.1</url>
+ </online>
+ </distribution>
+ </physical>
+ <attributeList><attribute id="1324592734245"><attributeName>EntryOrder</attributeName>
+ <attributeDefinition>Order that the data was entered in (for sorting purposes).</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><textDomain><definition>Order that the data was entered in (for sorting purposes).</definition>
+ </textDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324592734246"><attributeName>Region</attributeName>
+ <attributeDefinition>Study region/state; the area covered by each individual research team</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><enumeratedDomain><codeDefinition><code>FL</code>
+ <definition>Florida</definition>
+ </codeDefinition>
+ <codeDefinition><code>GA/SC</code>
+ <definition>Georgia/South Carolina</definition>
+ </codeDefinition>
+ </enumeratedDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324592734247"><attributeName>Collection Period</attributeName>
+ <attributeDefinition>Period and month during which samples were collected</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><textDomain><definition>Collection period #: Month and Year</definition>
+ </textDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324592734248"><attributeName>Collection Date</attributeName>
+ <attributeDefinition>Date on which the sample was collected</attributeDefinition>
+ <measurementScale><dateTime><formatString>MM/DD/YYYY</formatString>
+ <dateTimePrecision>0</dateTimePrecision>
+ </dateTime>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324592734249"><attributeName>Processing Date</attributeName>
+ <attributeDefinition>Date on which the sample was processed</attributeDefinition>
+ <measurementScale><dateTime><formatString>MM/DD/YYYY</formatString>
+ <dateTimePrecision>0</dateTimePrecision>
+ </dateTime>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324592734250"><attributeName>Site</attributeName>
+ <attributeDefinition>Study site/estuary within each region; Four sites per region</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><enumeratedDomain><codeDefinition><code>AH</code>
+ <definition>Alligator Harbor</definition>
+ </codeDefinition>
+ <codeDefinition><code>CK</code>
+ <definition>Cedar Key</definition>
+ </codeDefinition>
+ <codeDefinition><code>JV</code>
+ <definition>Jacksonville</definition>
+ </codeDefinition>
+ <codeDefinition><code>SA</code>
+ <definition>Saint Augustine</definition>
+ </codeDefinition>
+ <codeDefinition><code>ACE</code>
+ <definition>ACE Basin</definition>
+ </codeDefinition>
+ <codeDefinition><code>NI</code>
+ <definition>North Inlet</definition>
+ </codeDefinition>
+ <codeDefinition><code>SAP</code>
+ <definition>Sapelo</definition>
+ </codeDefinition>
+ <codeDefinition><code>SKIO</code>
+ <definition>Skidaway</definition>
+ </codeDefinition>
+ </enumeratedDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324592734251"><attributeName>Reef/ Creek No.</attributeName>
+ <attributeDefinition>Specific oyster reef within each site; Five reefs selected per site</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><enumeratedDomain><codeDefinition><code>1</code>
+ <definition>Reef #1</definition>
+ </codeDefinition>
+ <codeDefinition><code>2</code>
+ <definition>Reef #2</definition>
+ </codeDefinition>
+ <codeDefinition><code>3</code>
+ <definition>Reef #3</definition>
+ </codeDefinition>
+ <codeDefinition><code>4</code>
+ <definition>Reef #4</definition>
+ </codeDefinition>
+ <codeDefinition><code>5</code>
+ <definition>Reef #5</definition>
+ </codeDefinition>
+ </enumeratedDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324592734252"><attributeName>Reef/ Non-reef</attributeName>
+ <attributeDefinition>Inidcates whether the sample was taken directly on the reef (surrounded by oysters) or off the reef</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><enumeratedDomain><codeDefinition><code>non-reef</code>
+ <definition>Sample taken away from oyster reef</definition>
+ </codeDefinition>
+ <codeDefinition><code>reef</code>
+ <definition>Sample taken on oyster reef</definition>
+ </codeDefinition>
+ </enumeratedDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324592734253"><attributeName>Surface/ Sub-surface</attributeName>
+ <attributeDefinition>Indicates whether the sample is from the sediment surface or sub-surface</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><enumeratedDomain><codeDefinition><code>sub-surface</code>
+ <definition>Sediment from 0.5 to 2 cm under the surface</definition>
+ </codeDefinition>
+ <codeDefinition><code>surface</code>
+ <definition>Sediment from surface to 0.5 cm under the surface</definition>
+ </codeDefinition>
+ </enumeratedDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324592734254"><attributeName>Drying time (hrs)</attributeName>
+ <attributeDefinition>Time sample was left in drying oven (3 hours minimum)</attributeDefinition>
+ <measurementScale><dateTime><formatString>Hours</formatString>
+ </dateTime>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324592734255"><attributeName>Combust time (hrs)</attributeName>
+ <attributeDefinition>Time sample was left in furnace (3 hours minimum)</attributeDefinition>
+ <measurementScale><dateTime><formatString>Hours</formatString>
+ </dateTime>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324592734256"><attributeName>Tin #</attributeName>
+ <attributeDefinition>Identification number of the tin used during processing of the sample</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><textDomain><definition>Identification number given to tin before processing; Tins and numbers were reused</definition>
+ </textDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324592734257"><attributeName>Tin wt (g)</attributeName>
+ <attributeDefinition>Weight of tin prior to adding sediment sample</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>gram</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324592734258"><attributeName>Dry wt (g)</attributeName>
+ <attributeDefinition>Weight of tin and sample after sitting in a drying oven for at least 3 hours</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>gram</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324592734259"><attributeName>Combust wt (g)</attributeName>
+ <attributeDefinition>Weight of tin and sample after drying and sitting in furnace for at least 3 hours</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>gram</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324592734260"><attributeName>SOM (%)</attributeName>
+ <attributeDefinition>Sediment organic matter percentage
+
+Calculated as (Dry weight - Combusted weight) / (Dry weight - Tin weight) * 100</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>dimensionless</standardUnit>
+ </unit>
+ <numericDomain><numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324592734261"><attributeName>Non-reef distance from nearest oysters (m)</attributeName>
+ <attributeDefinition>Distance of non-reef samples from nearest oyster reef</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>meter</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324592734262"><attributeName>Notes</attributeName>
+ <attributeDefinition>Additional notes about SOM sediment sample</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><textDomain><definition>Additional notes about SOM sediment sample</definition>
+ </textDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ </attributeList>
+ <numberOfRecords>1140</numberOfRecords>
+ </dataTable>
+ <dataTable id="1324599307779"><entityName>Flowblock Data</entityName>
+ <entityDescription>Table of data for the plaster flowblock deployments</entityDescription>
+ <physical id="1324596112655"><objectName>Flowblocks.csv</objectName>
+ <size unit="byte">3236</size>
+ <dataFormat><textFormat><numHeaderLines>1</numHeaderLines>
+ <recordDelimiter>#x0A</recordDelimiter>
+ <attributeOrientation>column</attributeOrientation>
+ <simpleDelimited><fieldDelimiter>,</fieldDelimiter>
+ </simpleDelimited>
+ </textFormat>
+ </dataFormat>
+ <distribution><online><url>ecogrid://knb/evanlpettis.62.1</url>
+ </online>
+ </distribution>
+ </physical>
+ <attributeList><attribute id="1324599307780"><attributeName>Region</attributeName>
+ <attributeDefinition>Study region/state; the area covered by each individual research team</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><enumeratedDomain><codeDefinition><code>GA/SC</code>
+ <definition>Georgia/South Carolina</definition>
+ </codeDefinition>
+ <codeDefinition><code>FL</code>
+ <definition>Florida</definition>
+ </codeDefinition>
+ </enumeratedDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324599307781"><attributeName>Site</attributeName>
+ <attributeDefinition>Study site/estuary within each region; Four sites per region</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><enumeratedDomain><codeDefinition><code>SKIO</code>
+ <definition>Skidaway</definition>
+ </codeDefinition>
+ <codeDefinition><code>SAPELO</code>
+ <definition>Sapelo</definition>
+ </codeDefinition>
+ <codeDefinition><code>ACE BASIN</code>
+ <definition>ACE Basin</definition>
+ </codeDefinition>
+ <codeDefinition><code>N. INLET</code>
+ <definition>North Inlet</definition>
+ </codeDefinition>
+ <codeDefinition><code>AH</code>
+ <definition>Alligator Harbor</definition>
+ </codeDefinition>
+ <codeDefinition><code>CK</code>
+ <definition>Cedar Key</definition>
+ </codeDefinition>
+ <codeDefinition><code>SA</code>
+ <definition>Saint Augustine</definition>
+ </codeDefinition>
+ <codeDefinition><code>JV</code>
+ <definition>Jacksonville</definition>
+ </codeDefinition>
+ </enumeratedDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324599307782"><attributeName>Reef No.</attributeName>
+ <attributeDefinition>Specific oyster reef within each site; Five reefs selected per site</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><enumeratedDomain><codeDefinition><code>1</code>
+ <definition>Reef #1</definition>
+ </codeDefinition>
+ <codeDefinition><code>2</code>
+ <definition>Reef #2</definition>
+ </codeDefinition>
+ <codeDefinition><code>3</code>
+ <definition>Reef #3</definition>
+ </codeDefinition>
+ <codeDefinition><code>4</code>
+ <definition>Reef #4</definition>
+ </codeDefinition>
+ <codeDefinition><code>5</code>
+ <definition>Reef #5</definition>
+ </codeDefinition>
+ </enumeratedDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324599307783"><attributeName>Flowblock No.</attributeName>
+ <attributeDefinition>Flowblock identification number</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><textDomain><definition>Identification number for randomly assigned flowblock; Florida sites used 2-letter site ID and assigned flowblock #</definition>
+ </textDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324599307784"><attributeName>Date deployed</attributeName>
+ <attributeDefinition>Date that the flowblock was deployed</attributeDefinition>
+ <measurementScale><dateTime><formatString>MM/DD/YYYY</formatString>
+ <dateTimePrecision>0</dateTimePrecision>
+ </dateTime>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324599307785"><attributeName>Date retrieved</attributeName>
+ <attributeDefinition>Date that the flowblock was retrieved</attributeDefinition>
+ <measurementScale><dateTime><formatString>MM/DD/YYYY</formatString>
+ <dateTimePrecision>0</dateTimePrecision>
+ </dateTime>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324599307786"><attributeName>Date weighed (post collection)</attributeName>
+ <attributeDefinition>Date that the retrieved flowblocks were remeasured</attributeDefinition>
+ <measurementScale><dateTime><formatString>MM/DD/YYYY</formatString>
+ </dateTime>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324599307787"><attributeName># high tides</attributeName>
+ <attributeDefinition>Number of high tide periods between deployment and retrieval</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>dimensionless</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324599307788"><attributeName>Initial wt (g)</attributeName>
+ <attributeDefinition>Weight of flowblock before deployment</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>gram</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324599307789"><attributeName>Final wt (g)</attributeName>
+ <attributeDefinition>Weight of flowblock after deployment and retrieval</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>gram</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324599307790"><attributeName>Difference (g)</attributeName>
+ <attributeDefinition>Change in mass between initial weight and dinal weight</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>gram</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324599307791"><attributeName>Difference per high tide (g)</attributeName>
+ <attributeDefinition>Change in mass between initial weight and dinal weight standardized by number of high tides</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>gram</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ </attributeList>
+ <numberOfRecords>40</numberOfRecords>
+ </dataTable>
+ <dataTable id="1324601985129"><entityName>AB Inundation and Temperature Data</entityName>
+ <entityDescription>Statistical information on the continuously collected inundation and temperature data for ACE Basin</entityDescription>
+ <physical id="1324600544657"><objectName>AB_summary.csv</objectName>
+ <size unit="byte">8853</size>
+ <dataFormat><textFormat><numHeaderLines>1</numHeaderLines>
+ <recordDelimiter>#x0A</recordDelimiter>
+ <attributeOrientation>column</attributeOrientation>
+ <simpleDelimited><fieldDelimiter>,</fieldDelimiter>
+ </simpleDelimited>
+ </textFormat>
+ </dataFormat>
+ <distribution><online><url>ecogrid://knb/evanlpettis.65.1</url>
+ </online>
+ </distribution>
+ </physical>
+ <attributeList><attribute id="1324601985130"><attributeName>ID Number</attributeName>
+ <attributeDefinition>ID number output from analysis process</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><textDomain><definition>Order in which the data was output</definition>
+ </textDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324601985131"><attributeName>Site</attributeName>
+ <attributeDefinition>Study site/estuary within each region; Four sites per region</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><enumeratedDomain><codeDefinition><code>AB</code>
+ <definition>ACE Basin</definition>
+ </codeDefinition>
+ </enumeratedDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324601985132"><attributeName>Deployment</attributeName>
+ <attributeDefinition>Recording period covered by the tidal logger for that subset of data</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><textDomain><definition>Starting month-Ending month</definition>
+ </textDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324601985133"><attributeName>WeekGroup</attributeName>
+ <attributeDefinition>Indicates the 2-week subset of data being analyzed</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><textDomain><definition>Starting week-Ending week</definition>
+ </textDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324601985134"><attributeName>WetDry</attributeName>
+ <attributeDefinition>Indicates whether the data is indicative of exposed or inundated periods</attributeDefinition>
+ <measurementScale><nominal><nonNumericDomain><enumeratedDomain><codeDefinition><code>Dry</code>
+ <definition>Period during which the tidal logger was out of the water (low tides)</definition>
+ </codeDefinition>
+ <codeDefinition><code>Wet</code>
+ <definition>Period during which the tidal logger was under water</definition>
+ </codeDefinition>
+ </enumeratedDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324601985135"><attributeName>MeanHours</attributeName>
+ <attributeDefinition>Average number of hours per day over the 2-week subset in which the logger was in the indicated wet/dry state</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>hour</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324601985136"><attributeName>MedianHours</attributeName>
+ <attributeDefinition>Median number of hours per day over the 2-week subset in which the logger was in the indicated wet/dry state</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>hour</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324601985137"><attributeName>MinHours</attributeName>
+ <attributeDefinition>Minimum number of hours per day over the 2-week subset in which the logger was in the indicated wet/dry state</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>hour</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324601985138"><attributeName>MaxHours</attributeName>
+ <attributeDefinition>Maximum number of hours per day over the 2-week subset in which the logger was in the indicated wet/dry state</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>hour</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324601985139"><attributeName>NumDrySpells</attributeName>
+ <attributeDefinition>Number of times tidal logger entered an exposed (dry) period over the 2-week subset</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>dimensionless</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324601985140"><attributeName>MeanTemp</attributeName>
+ <attributeDefinition>Average water temperature over the 2-week period</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>celsius</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324601985141"><attributeName>MedianTemp</attributeName>
+ <attributeDefinition>Median water temperature over the 2-week period</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>celsius</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324601985142"><attributeName>MinTemp</attributeName>
+ <attributeDefinition>Minimum water temperature over the 2-week period</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>celsius</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324601985143"><attributeName>MaxTemp</attributeName>
+ <attributeDefinition>Maximum water temperature over the 2-week period</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>celsius</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324601985144"><attributeName>MeanWaterLevelAdj</attributeName>
+ <attributeDefinition>Average water level over the 2-week period</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>meter</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324601985145"><attributeName>MedianWaterLevelAdj</attributeName>
+ <attributeDefinition>Median water level over the 2-week period</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>meter</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324601985146"><attributeName>MinWaterLevelAdj</attributeName>
+ <attributeDefinition>Minimum water level over the 2-week period</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>meter</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1324601985147"><attributeName>MaxWaterLevelAdj</attributeName>
+ <attributeDefinition>Maximum water level over the 2-week period</attributeDefinition>
+ <measurementScale><ratio><unit><standardUnit>meter</standardUnit>
+ </unit>
+ <numericDomain><numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ </attributeList>
+ <numberOfRecords>56</numberOfRecords>
+ </dataTable>
+ </dataset>
+ <additionalMetadata><metadata><enityWizard><tracingChange>true</tracingChange>
+ <index>1</index>
+ </enityWizard>
+ </metadata>
+ </additionalMetadata>
+ </eml:eml>

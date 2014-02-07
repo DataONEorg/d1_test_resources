@@ -49,7 +49,16 @@
             </plugin>
 
         </plugins>
-    </build>  
+    </build> 
+    <dependencies>
+          <dependency>
+              <groupId>junit</groupId>
+              <artifactId>junit</artifactId>
+              <version>4.10</version>
+              <type>jar</type>
+              <scope>test</scope>
+          </dependency>
+    </dependencies>
    <scm>
       <url>https://repository.dataone.org/software/cicore</url>
       <connection>scm:svn:https://repository.dataone.org/software/cicore</connection>
