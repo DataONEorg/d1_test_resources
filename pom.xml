@@ -9,6 +9,7 @@
      <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
   <apache.ds.version>2.0.0-M17</apache.ds.version>
+  <apacheds-jdbm.version>2.0.0-M5</apacheds-jdbm.version>
       </properties>
 <build>
         <plugins>
@@ -91,6 +92,8 @@
                     <groupId>org.apache.directory.shared</groupId>
                     <artifactId>shared-ldap-schema</artifactId>
                 </exclusion>
+                <!-- this dependency is specifically excluded because of the broken dependency tree -->
+                <!-- org.apache.directory.server apacheds-jdbm is included below for correct functionality -->
                 <exclusion>
                     <artifactId>apacheds-jdbm1</artifactId>
                     <groupId>org.apache.directory.jdbm</groupId>
@@ -138,15 +141,23 @@
             </exclusions>
             <scope>test</scope>
         </dependency>
-        <!-- this dependency is specifically included because of the broken dependency tree 
+        <!-- this dependency is now specifically included because of the broken dependency tree 
              of apacheds-server-integ.  Do not know when/if apacheds will fix this. It has been a problem
              for a couple of years now -->
+        <dependency>
+                <groupId>org.apache.directory.server</groupId>
+                <artifactId>apacheds-jdbm</artifactId>
+                <version>${apacheds-jdbm.version}</version>
+                <scope>test</scope>
+        </dependency>
+        <!-- this dependency was specifically included because of the broken dependency tree 
+             of apacheds-server-integ. this was a prior fix to the problem
         <dependency>
             <groupId>org.apache.directory.jdbm</groupId>
             <artifactId>apacheds-jdbm1</artifactId>
             <version>2.0.0-M3-SNAPSHOT</version>
             <scope>test</scope>
-        </dependency>
+        </dependency> -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
