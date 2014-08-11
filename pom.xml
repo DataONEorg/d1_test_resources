@@ -8,7 +8,7 @@
   <url>http://dataone.org</url>
      <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
-  <apache.ds.version>2.0.0-M16</apache.ds.version>
+  <apache.ds.version>2.0.0-M17</apache.ds.version>
       </properties>
 <build>
         <plugins>
@@ -64,7 +64,7 @@
         <dependency>
             <groupId>org.apache.directory.server</groupId>
             <artifactId>apacheds-all</artifactId>
-            <version>2.0.0-M16</version>
+            <version>${apache.ds.version}</version>
             <exclusions>
                 <!-- exclude additional LDIF schema files to avoid conflicts through 
                 multiple copies -->
@@ -138,6 +138,9 @@
             </exclusions>
             <scope>test</scope>
         </dependency>
+        <!-- this dependency is specifically included because of the broken dependency tree 
+             of apacheds-server-integ.  Do not know when/if apacheds will fix this. It has been a problem
+             for a couple of years now -->
         <dependency>
             <groupId>org.apache.directory.jdbm</groupId>
             <artifactId>apacheds-jdbm1</artifactId>
