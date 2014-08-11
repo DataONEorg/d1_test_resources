@@ -24,7 +24,7 @@ import org.junit.runners.Suite.SuiteClasses;
 @RunWith(ApacheDSSuiteRunner.class)
 @SuiteClasses({ DSSuiteTestCase1.class, DSSuiteTestCase2.class })
 @CreateDS(allowAnonAccess = false, enableAccessControl=true,  authenticators ={@CreateAuthenticator(type = SimpleAuthenticator.class)} ,name = "org", partitions = { @CreatePartition(name = "org", suffix = "dc=org") })
-@ApplyLdifFiles({"org/dataone/test/apache/directory/server/dataone-schema.ldif", "org/dataone/test/apache/directory/server/dataone-base-data.ldif", "org/dataone/test/services/types/v1/node/ldif/devNodeList.ldif", "org/dataone/test/services/types/v1/person/ldif/devTestPrincipal.ldif"})
+@ApplyLdifFiles({"org/dataone/test/apache/directory/server/dataone-schema.ldif", "org/dataone/test/apache/directory/server/dataone-base-data.ldif", "org/dataone/test/services/types/v1/nodes/ldif/devNodeList.ldif", "org/dataone/test/services/types/v1/person/ldif/devTestPrincipal.ldif"})
 @CreateLdapServer(transports = { @CreateTransport(protocol = "LDAP", port=10389) })
 public class ApacheDirectorySuiteTest {
     
