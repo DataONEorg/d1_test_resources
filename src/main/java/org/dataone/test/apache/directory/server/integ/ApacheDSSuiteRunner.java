@@ -35,13 +35,12 @@ import org.apache.directory.server.factory.ServerAnnotationProcessor;
 import org.apache.directory.server.i18n.I18n;
 import org.apache.directory.server.kerberos.kdc.KdcServer;
 import org.apache.directory.server.ldap.LdapServer;
+import org.apache.log4j.Logger;
 import org.junit.runner.notification.Failure;
 import org.junit.runner.notification.RunNotifier;
 import org.junit.runners.Suite;
 import org.junit.runners.model.InitializationError;
 import org.junit.runners.model.RunnerBuilder;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * Based on org.apache.directory.server.core.integ.FrameworkRunner
@@ -66,7 +65,7 @@ public class ApacheDSSuiteRunner extends Suite {
      */
     
     // A logger for this class
-    private static final Logger LOG = LoggerFactory.getLogger(ApacheDSSuiteRunner.class);
+    static Logger logger = Logger.getLogger(ApacheDSSuiteRunner.class);
 
 
     // The 'service' field in the run tests
@@ -86,17 +85,17 @@ public class ApacheDSSuiteRunner extends Suite {
 
     // The DirectoryService for this class, if any
 
-    private DirectoryService classDS;
+    private DirectoryService classDS = null;
 
 
     // The LdapServer for this class, if any
 
-    private LdapServer classLdapServer;
+    private static LdapServer classLdapServer = null;
 
 
     // The KdcServer for this class, if any
 
-    private KdcServer classKdcServer;
+    private  KdcServer classKdcServer = null;
 
     /**
      * Called reflectively on classes annotated with <code>@RunWith(Suite.class)</code>
@@ -195,7 +194,7 @@ public class ApacheDSSuiteRunner extends Suite {
             // print out information which partition factory we use
             DirectoryServiceFactory dsFactory = DefaultDirectoryServiceFactory.class.newInstance();
             PartitionFactory partitionFactory = dsFactory.getPartitionFactory();
-            LOG.debug("Using partition factory {}", partitionFactory.getClass().getSimpleName());
+            logger.debug("Using partition factory " + partitionFactory.getClass().getSimpleName());
 
             // Now run the class
             super.run(notifier);
@@ -211,7 +210,7 @@ public class ApacheDSSuiteRunner extends Suite {
             // cleanup classService if it is not the same as suite service or
             // it is not null (this second case happens in the absence of a suite)
             if (classDS != null) {
-                LOG.debug("Shuting down DS for {}", classDS.getInstanceId());
+                logger.debug("Shuting down DS for " + classDS.getInstanceId());
                 classDS.shutdown();
                 FileUtils.deleteDirectory(classDS.getInstanceLayout().getInstanceDirectory());
             } else {
@@ -220,8 +219,8 @@ public class ApacheDSSuiteRunner extends Suite {
                 revert(directoryService, revision);
             }
         } catch (Exception e) {
-            LOG.error(I18n.err(I18n.ERR_181, getTestClass().getName()));
-            LOG.error(e.getLocalizedMessage());
+            logger.error(I18n.err(I18n.ERR_181, getTestClass().getName()));
+            logger.error(e.getLocalizedMessage());
             notifier.fireTestFailure(new Failure(getDescription(), e));
         } finally {
             // help GC to get rid of the directory service with all its references
@@ -243,7 +242,7 @@ public class ApacheDSSuiteRunner extends Suite {
     private long getCurrentRevision(DirectoryService dirService) throws Exception {
         if ((dirService != null) && (dirService.getChangeLog().isEnabled())) {
             long revision = dirService.getChangeLog().getCurrentRevision();
-            LOG.debug("Create revision {}", revision);
+            logger.debug("Create revision " + revision);
 
             return revision;
         }
@@ -258,8 +257,13 @@ public class ApacheDSSuiteRunner extends Suite {
 
         ChangeLog cl = dirService.getChangeLog();
         if (cl.isEnabled() && (revision < cl.getCurrentRevision())) {
-            LOG.debug("Revert revision {}", revision);
+            logger.debug("Revert revision " + revision);
             dirService.revert(revision);
         }
     }
+
+    public static LdapServer getLdapServer() {
+        return classLdapServer;
+    }
+    
 }

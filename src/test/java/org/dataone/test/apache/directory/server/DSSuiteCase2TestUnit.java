@@ -3,21 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package org.dataone.test.apache.directory.server;
+
 
 import java.util.HashMap;
 import java.util.Map;
 import javax.naming.NamingEnumeration;
 import javax.naming.directory.Attribute;
 import javax.naming.directory.Attributes;
-import javax.naming.directory.DirContext;
 import javax.naming.directory.SearchControls;
 import javax.naming.directory.SearchResult;
 import javax.naming.ldap.LdapContext;
-import org.apache.directory.server.integ.ServerIntegrationUtils;
 import org.junit.Assert;
 import static org.junit.Assert.assertTrue;
-import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,19 +25,16 @@ import org.slf4j.LoggerFactory;
  *
  * @author waltz
  */
-public class DSSuiteTestCase1 {
-
-    private static final Logger log = LoggerFactory.getLogger(DSSuiteTestCase1.class);
-
+public class DSSuiteCase2TestUnit {
+    private static final Logger log = LoggerFactory.getLogger(DSSuiteCase2TestUnit.class);
     @Test
-    public void testPrincipalSearch() throws Exception {
-
+    public void testNodeSearch() throws Exception{
         LdapContext ldapCtx = DSContext.getDefaultContext();
 
         final SearchControls searchControls = new SearchControls();
         searchControls.setSearchScope(SearchControls.SUBTREE_SCOPE);
 
-        NamingEnumeration<SearchResult> results = ldapCtx.search("dc=org", "(cn=Test1)", searchControls);
+        NamingEnumeration<SearchResult> results = ldapCtx.search("dc=org", "(cn=urn:node:testcn)", searchControls);
         assertTrue(results.hasMore());
 
 //		SearchResult firstResultItem = results.next();
@@ -63,9 +59,9 @@ public class DSSuiteTestCase1 {
             }
             allEntriesMap.put(entryDN, attributesMap);
         }
-        // Confirm that there are 2 entries
-        assertTrue(allEntriesMap.size() == 2);
+        // Confirm that there are 1 entries
+        assertTrue(allEntriesMap.size() == 1);
         log.info("AllEntrys = " + allEntriesMap.size());
-        
+
     }
 }
