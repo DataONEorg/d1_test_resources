@@ -1,0 +1,39 @@
+dn: c=US,dc=cilogon,dc=org
+objectClass: country
+c: US
+
+dn: o=Test,c=US,dc=cilogon,dc=org
+objectClass: organization
+o: Test
+
+dn: cn=Test1,o=Test,c=US,dc=cilogon,dc=org
+mail: Test1@nowhere.com
+givenName: Test1
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: d1Principal
+sn: CILogonTest
+cn: Test1
+isVerified: TRUE
+
+dn: c=US,dc=dataone,dc=org
+objectClass: country
+c: US
+
+dn: o=Test,c=US,dc=dataone,dc=org
+objectClass: organization
+o: Test
+
+dn: cn=Test1,o=Test,c=US,dc=dataone,dc=org
+mail: Test1@now.here.com
+givenName: Test1
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: d1Principal
+sn: DataONETest
+cn: Test1
+isVerified: TRUE

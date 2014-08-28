@@ -2,19 +2,23 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.dataone</groupId>
   <artifactId>d1_test_resources</artifactId>
-  <version>1.2.2</version>
+  <version>1.3.0</version>
   <name>DataONE Test Resources Package</name>
   <description>Set of common test resources available to all DataONE packages for both unit and integration testing</description>
   <url>http://dataone.org</url>
-  
+     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
+  <apache.ds.version>2.0.0-M17</apache.ds.version>
+  <apacheds-jdbm.version>2.0.0-M5</apacheds-jdbm.version>
+      </properties>
 <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>1.7</source>
+                    <target>1.7</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -49,7 +53,144 @@
             </plugin>
 
         </plugins>
-    </build>  
+    </build> 
+    <dependencies>
+          <dependency>
+              <groupId>junit</groupId>
+              <artifactId>junit</artifactId>
+              <version>4.11</version>
+              <type>jar</type>
+          </dependency>
+        <!-- Apache DS dependencies -->
+        <dependency>
+            <groupId>org.apache.directory.server</groupId>
+            <artifactId>apacheds-all</artifactId>
+            <version>${apache.ds.version}</version>
+            <exclusions>
+                <!-- exclude additional LDIF schema files to avoid conflicts through 
+                multiple copies -->
+                <exclusion>
+                    <groupId>org.apache.directory.shared</groupId>
+                    <artifactId>shared-ldap-schema</artifactId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>api-ldap-schema-data</artifactId>
+                    <groupId>org.apache.directory.api</groupId>
+                </exclusion>
+            </exclusions>
+            <type>jar</type>
+        </dependency>
+		 
+        <dependency>
+            <groupId>org.apache.directory.server</groupId>
+            <artifactId>apacheds-server-integ</artifactId>
+            <version>${apache.ds.version}</version>
+            <exclusions>
+                <!-- exclude additional LDIF schema files to avoid conflicts through 
+                multiple copies -->
+                <exclusion>
+                    <groupId>org.apache.directory.shared</groupId>
+                    <artifactId>shared-ldap-schema</artifactId>
+                </exclusion>
+                <!-- this dependency is specifically excluded because of the broken dependency tree -->
+                <!-- org.apache.directory.server apacheds-jdbm is included below for correct functionality -->
+                <exclusion>
+                    <artifactId>apacheds-jdbm1</artifactId>
+                    <groupId>org.apache.directory.jdbm</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>api-ldap-schema-data</artifactId>
+                    <groupId>org.apache.directory.api</groupId>
+                </exclusion>
+            </exclusions>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.directory.server</groupId>
+            <artifactId>apacheds-core-integ</artifactId>
+            <version>${apache.ds.version}</version>
+            <exclusions>
+                <!-- exclude additional LDIF schema files to avoid conflicts through 
+                multiple copies -->
+                <exclusion>
+                    <groupId>org.apache.directory.shared</groupId>
+                    <artifactId>shared-ldap-schema</artifactId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>api-ldap-schema-data</artifactId>
+                    <groupId>org.apache.directory.api</groupId>
+                </exclusion>
+            </exclusions>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.directory.server</groupId>
+            <artifactId>apacheds-server-jndi</artifactId>
+            <version>${apache.ds.version}</version>
+            <exclusions>
+                <!-- exclude additional LDIF schema files to avoid conflicts through 
+                multiple copies -->
+                <exclusion>
+                    <groupId>org.apache.directory.shared</groupId>
+                    <artifactId>shared-ldap-schema</artifactId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>api-ldap-schema-data</artifactId>
+                    <groupId>org.apache.directory.api</groupId>
+                </exclusion>
+            </exclusions>
+            <scope>test</scope>
+        </dependency>
+        <!-- this dependency is now specifically included because of the broken dependency tree 
+             of apacheds-server-integ.  Do not know when/if apacheds will fix this. It has been a problem
+             for a couple of years now -->
+        <dependency>
+                <groupId>org.apache.directory.server</groupId>
+                <artifactId>apacheds-jdbm</artifactId>
+                <version>${apacheds-jdbm.version}</version>
+                <scope>test</scope>
+        </dependency>
+        <!-- this dependency was specifically included because of the broken dependency tree 
+             of apacheds-server-integ. this was a prior fix to the problem
+        <dependency>
+            <groupId>org.apache.directory.jdbm</groupId>
+            <artifactId>apacheds-jdbm1</artifactId>
+            <version>2.0.0-M3-SNAPSHOT</version>
+            <scope>test</scope>
+        </dependency> -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.5</version>
+            <scope>test</scope>
+        </dependency>
+         <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.5</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>1.7.5</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>log4j-over-slf4j</artifactId>
+            <version>1.7.5</version>
+            <scope>test</scope>
+        </dependency>
+     
+        <dependency> 
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.0.13</version>
+            <type>jar</type>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
    <scm>
       <url>https://repository.dataone.org/software/cicore</url>
       <connection>scm:svn:https://repository.dataone.org/software/cicore</connection>

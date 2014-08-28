@@ -1,0 +1,1052 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml packageId="kgordon.35.49" scope="system" system="knb" xmlns:eml="eml://ecoinformatics.org/eml-2.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.0 eml.xsd"> <access authSystem="knb" order="allowFirst" scope="document"> <allow> <principal>public</principal>
+ <permission>read</permission>
+ </allow>
+ <allow> <principal>uid=gss1,o=unaffiliated,dc=ecoinformatics,dc=org</principal>
+ <permission>all</permission>
+ </allow>
+ <allow> <principal>uid=datastar,o=unaffiliated,dc=ecoinformatics,dc=org</principal>
+ <permission>all</permission>
+ </allow>
+ <allow> <principal>uid=kholeck,o=unaffiliated,dc=ecoinformatics,dc=org</principal>
+ <permission>all</permission>
+ </allow>
+ <allow> <principal>uid=teb1,o=unaffiliated,dc=ecoinformatics,dc=org</principal>
+ <permission>all</permission>
+ </allow>
+ <allow> <principal>uid=rudstam,o=unaffiliated,dc=ecoinformatics,dc=org</principal>
+ <permission>all</permission>
+ </allow>
+ </access>
+ <dataset scope="document">  <title>Limnological data and depth profile from Oneida Lake, New York, 1975 - 2012</title>
+<creator id="1213899118546"><individualName><givenName>Lars</givenName>
+<surName>Rudstam</surName>
+</individualName>
+<organizationName>Cornell Biological Field Station</organizationName>
+<positionName>Director</positionName>
+<address><deliveryPoint>900 Shackelton Point Road</deliveryPoint>
+<city>Bridgeport</city>
+<administrativeArea>NY</administrativeArea>
+<postalCode>13030</postalCode>
+<country>USA</country>
+</address>
+<phone phonetype="voice">(315) 633-9243</phone>
+<electronicMailAddress>lgr1@cornell.edu</electronicMailAddress>
+<onlineUrl>http://www.dnr.cornell.edu/~rudstam</onlineUrl>
+</creator>
+<abstract><para>The Cornell Biological Field Station (CBFS) serves as a primary field site for aquatic research at Cornell University (more information can be found at http://www.dnr.cornell.edu/fieldst/cbfs.htm) and is part of the Department of Natural Resources, College of Agriculture and Life Sciences. The centerpiece of the station's research program is a 50-year database on the food web of Oneida Lake, New York, that has been collected with support from the Cornell University Brown Endowment and from the New York State Department of Environmental Conservation. The data are collected by personnel from the Cornell Biological Field Station and include limnology, benthos, zooplankton, phytoplankton, and fish datasets from Oneida Lake spanning 1957 to the present.  This data package includes four tables: 1) location and attributes of sampling stations, 2) Depth profiles for temperature, pH, dissolved oxygen, conductivity and from 2011 chlorophyll, 3) average water column data for each station sampled, and 4) average weekly water column data.</para>
+</abstract>
+  <keywordSet> <keyword>Lakes</keyword>
+ <keyword>Ecosystem functions</keyword>
+ <keyword>Nutrients</keyword>
+ <keyword>pH</keyword>
+ <keyword>Oxygen</keyword>
+ <keyword>Chlorophyll</keyword>
+ <keyword>Alkalinity</keyword>
+ <keyword>Temperature</keyword>
+ <keyword>Secchi Depth</keyword>
+ <keyword>Total Dissolved Solids</keyword>
+ <keywordThesaurus>Global Change Master Directory (GCMD) Science Keywords</keywordThesaurus>
+ </keywordSet>
+ <keywordSet> <keyword>Oneida Lake, New York</keyword>
+ <keyword>Oneida County, New York</keyword>
+ <keyword>Onondaga County, New York</keyword>
+ <keyword>Madison County, New York</keyword>
+ <keyword>Oswego County, New York</keyword>
+ </keywordSet>
+ <intellectualRights> <para>This data set is made available under the Open Data Commons Attribution License: http://www.opendatacommons.org/licenses/by/1.0/. Users of this data set are very strongly encouraged to check with the data set Owner or the individual listed as the Contact for this data set to verify that they have the most current and correct version of the data. Users are also encouraged to notify the data set Owner/Contact to describe their intended use of the data set, including planned publications, and to supply the Owner/Contact with a copy of any publication or derivative work using or citing the data set.</para>
+ </intellectualRights>
+ <coverage scope="document"> <geographicCoverage scope="document"> <geographicDescription>Oneida Lake, New York, 1975-2011</geographicDescription>
+ <boundingCoordinates> <westBoundingCoordinate>-76.04444</westBoundingCoordinate>
+ <eastBoundingCoordinate>-75.77083</eastBoundingCoordinate>
+ <northBoundingCoordinate>43.22111</northBoundingCoordinate>
+ <southBoundingCoordinate>43.17833</southBoundingCoordinate>
+ </boundingCoordinates>
+ </geographicCoverage>
+  <temporalCoverage><rangeOfDates><beginDate><calendarDate>1975</calendarDate>
+</beginDate>
+<endDate><calendarDate>2013</calendarDate>
+</endDate>
+</rangeOfDates>
+</temporalCoverage>
+</coverage>
+<contact id="1213899257281"><individualName><givenName>Kristen</givenName>
+<surName>Holeck</surName>
+</individualName>
+<organizationName>Cornell Biological Field Station</organizationName>
+<positionName>Research Support Specialist</positionName>
+<address><deliveryPoint>900 Shackelton Point Road</deliveryPoint>
+<city>Bridgeport</city>
+<administrativeArea>NY</administrativeArea>
+<postalCode>13030</postalCode>
+<country>USA</country>
+</address>
+<phone phonetype="voice">(315) 633-9243</phone>
+<electronicMailAddress>kth1@cornell.edu</electronicMailAddress>
+</contact>
+ <methods><methodStep><description><section><title>Field methods</title>
+<para>Oneida Lake limnology data has been collected from 1975-2011 at up to eleven sites (depending on year).  Five of these sites are standard sampling sites.  The limnology data table contains data for each parameter by individual site. Some parameters are from an integrated water column sample that is returned to the lab for processing, and some are the water column average calculated from the profiles (temperature for the whole data set, pH and conductivity from 1995 to 2011). These differences are noted in the column documentation. Beginning in 2010, one site (Buoy 117) was dropped from standard sampling and a new sampling protocol for water chemistry was developed.  Four sites were sampled each week, and on week 1 water samples were processed by individual stations as in 1975-2009 . On weeks 2-4, water from all four sites was pooled for analysis.  This rotation was maintained throughout the sampling season.  These samples are indentified as being pooled samples.</para>
+<para>Integrated water samples were collected with a 1.9 cm inner diameter tygon tube (Nalgene) lowered from the surface to 0.5 m above the bottom, then closed at the top, retrieved, and emptied into 4L plastic bottles or into a plastic carbuoy.  Water samples for nutrient analyses were taken from this water.  Temperature and dissolved oxygen was measured with a YSI temperature/oxygen probe from 1975 to 1994, with a Hydrolab Datasonde II from 1995 to 2010 and a Hydroloab Datasonde 5 from 2011 which includes a fluorometer.  From 1975 through 1994, water samples for dissolved oxygen was collected with a Van Dorn sample close to the bottom, fixed immediately after retrieval and analyzed using standard Winkler method (Strickland and Parsons 1972). Secchi disk transparency is measured with a 20 cm diameter black and white disk.</para>
+<para>Wind speed and direction was estimated during sampling and noted.  This data is included after 1998.</para>
+<para>The limnology profile table contains whole water column profile data obtained weekly (May - October) at the sampling sites.  Readings were taken just below the surface and at whole meter increments below the surface to the lake bottom. Temperature profiles are available from 1975-present. Dissolved oxygen, conductivity and pH are available from 1995 with some exceptions.  Bottom DO from 1995 is taken from the hydrolab reading closest to the bottom.</para>
+<para>The weekly average table contains the average values for the five standard stations (four since 2010).  The date in this table refer to the first day that sampling was conducted in a particular week.  Samples were not always collected at all stations during the same day due to weather. Values below the detection limits were replaced by the detection limits when calculating averages.</para>
+</section>
+</description>
+</methodStep>
+<methodStep><description><section><title>Laboratory Methods</title>
+<para>Within 2 to 4 h after collection, water samples for dissolved constituents were filtered through a 1.5 um pore size Whatman 934-AH filter and frozen for later analyses.</para>
+<para>Dissolved Silicate (Soluble Reactive Silica SRSi, ug Si), Soluble Reactive Phosphorus (SRP; dissolved inorganic monophosphate in ug P), and Total Filterable Phosphorus were measured by molybdate spectrophotometric methods (Strickland and Parsons 1972—SiO2 and SRP; Menzel and Corwin 1965--TFP).  Nitrate (NO3-) was processed according to Standard Methods (1975). Nitrite was processed according to Strickland and Parsons (1972).  Unfiltered water was frozen for later analysis of Total Phosphorus (TP) with the method of Menzel and Corwin (1965). Values below detections limits given below are designated as BLD (below detection limit). Oxygen samples (DO) were fixed immediately upon retrieval and measured using the Winkler method (Strickland and Parsons 1972). Total dissolved solids and Alkalinity was measured for part of the data series.  Total dissolved solids were measured with a microbalance by measuring the amount of solids left after evaporating 100 mL of filtered water (1.5 um Whatman 934-AH filter) in a drying owen at 60  F.  Alkalinity was measured using the method described by Wetzel and Likens (2000) using titration of water sample with 0.02N H2SO4 and brom cresol green - methyl red indicator.  Alkalinity is given as mg CaCO3/L.  Samples for chlorophyll a (chl-a) were filtered onto a Whatman 934-AH filter and frozen.  Filters were extracted with 90% acetone and measured spectrophotometrically (Strickland and Parsons 1972) including the adjustment for phaeopigments using the equations:</para>
+<para>Total Chlorophyll (ug/L) = 11 * (665nm-750nm)* Vol. cuvette mL)/Vol. Filtered L</para>
+<para>Chl-a (ug/L)= (26.7*((665nm-750nm)-(665Anm-750Anm))*Vol. cuvette mL)/Vol. Filtered L</para>
+<para>Pheopigments (ug/L)  =  (26.7*(1.7*(665Anm-750Anm)-(665nm-750nm))*Vol. cuvette mL)/Vol. Filtered L</para>
+<para>Lower detection limits and methods for 1975 to 2008:</para>
+<para>Analyte	Lower Detection Limits	Methods</para>
+<para>TP	0.1 ug/L		Menzel and Corwin 1965</para>
+<para>TFP	0.1 ug/L		Menzel and Corwin 1965</para>
+<para>SRP	0.1 ug/L		Strickland and Parsons 1968 II.2.I.</para>
+<para>NO3	40 ug/L		Standard Methods 1975 APHA 419 A</para>
+<para>NO2	0.1 ug/L		Strickland and Parsons 1968  II.7</para>
+<para>SRS	1 ug/L0		Strickland and Parsons 1968 II.5</para>
+<para>Chl	0.1 ug/L		Stickland and Parsons 1972</para>
+<para>From 2009, nutrients samples were analyzed at the Upstate Freshwater Institute (UFI).  This EPA approved laboratory uses the following methods and gives both lower quantifiable limits (LOQ) and lower detection limits (LOD) for each year.  Values for 2010 and 2011 are below.  From 2009, we analyze SRP, TP, TFP, NOx, NO2 (2010 only), Total dissolved N (TDN), Total particulate N (TPN, since 2011) adn Soluble reacive silica (SRSi). For year 2009 we only analyzed TP, NOx and SRSi.</para>
+<para>UFI methods</para>
+<para>Parameter	Method		LOQ	LOD</para>
+<para>NOX	USEPA 353.1 Rev 2.0	37 µgN/L	9 µgN/L</para>
+<para>NO2	USEPA 353.1 Rev 2.0	15 µgN/L	4 µgN/L</para>
+<para>TPN	SM 20 4500-N C	370 µgN/L	105 µgN/L</para>
+<para>TDN	SM 20 4500-N C	370 µgN/L	105 µgN/L</para>
+<para>TP	SM 18-20 4500-P E	4.7 ug P/L	1.1 ug P/L</para>
+<para>TDP	SM 18-20 4500-P E	4.8 ug P/L	1.2 ug P/L</para>
+<para>SRP	SM 18-20 4500-P E	1.4 ug P/L	0.4 ug P/L</para>
+<para>SRSi	SM 20 4500-SiO2 C	196 ugSi/L	56 ugSiL</para>
+<para>Note on data quality check</para>
+<para>Year 2000.  Original TFP data higher than TP for the first part of the year, sometimes more than a factor 2.  This is not found inthe rest of the data set where sometimes TFP is slighlty higher than TP.  Analysis QA for blanks and standards OK.  Explanation is that the bottles were mislabeled. For Year 2000, TP was assumed to be the higher of the the two values (TFP or TP) and TFP the lower.  Were values were switched are noted in the integrated water column table.</para>
+<para>Year 2011 and 2012.  Original Alkalinity data too low, this is being checked.  Data not included in the weekly table.</para>
+<para>Weekly table includes NOx as the sume of NO2 and NO3 for years 1975 to 2008.  After that, we measured NOx.  Separate NO2 and NO3 data are in the integrated water column table.</para>
+<para>References</para>
+<para>Strickland, J. D., and T. R. Parsons 1968, 1972.  A practical handbook of seawater analysis.  Bull. Fish. Res. Bd. Can.</para>
+<para>Standard Methods for the Examination of Water and Wastewater. 1975.  14th Edition.</para>
+<para>Menzel, D., and N. Corwin. 1965.  The measurement of total phosphorus in seawater based on the liberation of organically bound fractions by persulfate oxidation.  Limnology and Oceanography. 10: 280-282.</para>
+<para>Wetzel, R.G. and G. E. Likens. 2000. Limnological analysis, third edition. Springer, New York, NY.</para>
+</section>
+</description>
+</methodStep>
+</methods>
+<project scope="document"> <title>Cornell Biological Field Station long-term dataset</title>
+ <personnel scope="document"> <references>1213899118546</references>
+ <role>Principal Investigator</role>
+ </personnel>
+ <funding> <para>Cornell University Brown Endowment; New York Department of Environmental Conservation</para>
+ </funding>
+ </project>
+   <dataTable id="1217959800921" scope="document"> <entityName>Limnology Profiles Oneida.csv</entityName>
+ <entityDescription>Depth profiles at 1 meter increments of temperature, dissolved oxygen, pH, and conductivity for six standard sampling sites on Oneida Lake, New York</entityDescription>
+ <physical id="1217959799015" scope="document"> <objectName>Limnology Profiles Oneida.csv</objectName>
+ <size unit="byte">3769299</size>
+ <dataFormat> <textFormat> <numHeaderLines>1</numHeaderLines>
+ <recordDelimiter>#x0A</recordDelimiter>
+ <attributeOrientation>column</attributeOrientation>
+ <simpleDelimited> <fieldDelimiter>,</fieldDelimiter>
+ </simpleDelimited>
+ </textFormat>
+ </dataFormat>
+ <distribution><online><url>ecogrid://knb/cbfs.131.4</url>
+ </online>
+ </distribution>
+ </physical>
+ <attributeList> <attribute id="1217959800937" scope="document"> <attributeName>DateString</attributeName>
+ <attributeDefinition>Date that data were collected</attributeDefinition>
+ <measurementScale> <dateTime> <formatString>yyyymmdd</formatString>
+ <dateTimePrecision>1</dateTimePrecision>
+ </dateTime>
+ </measurementScale>
+ </attribute>
+ <attribute id="1349459010546" scope="document"> <attributeName>Date</attributeName>
+ <attributeDefinition>Date of samples</attributeDefinition>
+ <measurementScale> <dateTime> <formatString>MM/DD/YYYY</formatString>
+ <dateTimePrecision>1 day</dateTimePrecision>
+ </dateTime>
+ </measurementScale>
+ </attribute>
+ <attribute id="1217959800953" scope="document"> <attributeName>Site</attributeName>
+ <attributeDefinition>Site at which data were collected</attributeDefinition>
+ <measurementScale> <nominal> <nonNumericDomain> <textDomain> <definition>site names</definition>
+ </textDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1217959800984" scope="document"> <attributeName>Gear Type</attributeName>
+ <attributeDefinition>Model of instrument package</attributeDefinition>
+ <measurementScale> <nominal> <nonNumericDomain> <enumeratedDomain enforced="yes"> <codeDefinition> <code>YSI</code>
+ <definition>YSI probe with Temperature</definition>
+ </codeDefinition>
+ <codeDefinition> <code>Hydrolob Datasonde II</code>
+ <definition>Hydrolab with Temp Depth Conductivity and pH</definition>
+ </codeDefinition>
+ <codeDefinition> <code>Hydrolab Datasonde 5</code>
+ <definition>Hydrolab with Temp Depth Conductivity, pH and fluorometer</definition>
+ </codeDefinition>
+ </enumeratedDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1217959801000" scope="document"> <attributeName>Depth</attributeName>
+ <attributeDefinition>Depth in meters at which data were collected</attributeDefinition>
+ <measurementScale> <ratio> <unit> <standardUnit>meter</standardUnit>
+ </unit>
+ <precision>0.1</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1217959801015" scope="document"> <attributeName>Temp</attributeName>
+ <attributeLabel>Temperature</attributeLabel>
+ <attributeDefinition>Temperature in degrees celsius</attributeDefinition>
+ <measurementScale> <ratio> <unit> <standardUnit>celsius</standardUnit>
+ </unit>
+ <precision>.01</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1217959801031" scope="document"> <attributeName>DO</attributeName>
+ <attributeLabel>Dissolved Oxygen</attributeLabel>
+ <attributeDefinition>Dissolved oxygen in milligrams per liter</attributeDefinition>
+ <measurementScale> <ratio> <unit> <customUnit>mg/L</customUnit>
+ </unit>
+ <precision>0.01</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1217959801046" scope="document"> <attributeName>pH</attributeName>
+ <attributeDefinition>pH of sample</attributeDefinition>
+ <measurementScale> <interval> <unit> <standardUnit>dimensionless</standardUnit>
+ </unit>
+ <precision>.01</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </interval>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1217959801062" scope="document"> <attributeName>Cond</attributeName>
+ <attributeLabel>Conductivity</attributeLabel>
+ <attributeDefinition>Conductivity in micromhos per centimeter</attributeDefinition>
+ <measurementScale> <ratio> <unit> <customUnit>micromhos/cm</customUnit>
+ </unit>
+ <precision>0.1</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1349459486159" scope="document"><attributeName>InSituChl</attributeName>
+<attributeLabel>In situ chlorophyll</attributeLabel>
+<attributeDefinition>Chlorophyll a measured with fluorometer on the Hydrolab DataSonde 5</attributeDefinition>
+<measurementScale><ratio><unit><customUnit>microgramsperLiter</customUnit>
+</unit>
+<precision>.01</precision>
+<numericDomain><numberType>real</numberType>
+</numericDomain>
+</ratio>
+</measurementScale>
+<missingValueCode><code>-999</code>
+<codeExplanation>no data</codeExplanation>
+</missingValueCode>
+</attribute>
+ </attributeList>
+ <numberOfRecords>52196</numberOfRecords>
+ </dataTable>
+ <dataTable id="1217964900515" scope="document"> <entityName>Integrated Water Column Limnology Oneida.csv</entityName>
+ <entityDescription>Summary of limnological parameters taken from either an integrated water column sample or from an average of measurements taken at one meter intervals (see column documentation for explanation of each parameter)</entityDescription>
+ <physical id="1217964899046" scope="document"> <objectName>MASTER Limno Sum (01231975 - 06122013) .csv</objectName>
+ <size unit="byte">743340</size>
+ <dataFormat> <textFormat> <numHeaderLines>1</numHeaderLines>
+ <recordDelimiter>#x0A</recordDelimiter>
+ <attributeOrientation>column</attributeOrientation>
+ <simpleDelimited> <fieldDelimiter>,</fieldDelimiter>
+ </simpleDelimited>
+ </textFormat>
+ </dataFormat>
+ <distribution><online><url>ecogrid://knb/cbfs.37.16</url>
+ </online>
+ </distribution>
+ </physical>
+ <attributeList> <attribute id="1217964900531" scope="document"> <attributeName>Date</attributeName>
+ <attributeDefinition>Date on which data were collected</attributeDefinition>
+ <measurementScale> <dateTime> <formatString>yyyymmdd</formatString>
+ <dateTimePrecision>1</dateTimePrecision>
+ </dateTime>
+ </measurementScale>
+ </attribute>
+ <attribute id="1349459712609" scope="document"> <attributeName>Date</attributeName>
+ <attributeDefinition>Date of sampling</attributeDefinition>
+ <measurementScale> <dateTime> <formatString>MM/DD/YYYY</formatString>
+ <dateTimePrecision>1 day</dateTimePrecision>
+ </dateTime>
+ </measurementScale>
+ </attribute>
+ <attribute id="1349459839796" scope="document"> <attributeName>SamplingWeek</attributeName>
+ <attributeDefinition>Week number associated with the sample date</attributeDefinition>
+ <measurementScale> <ratio> <unit> <standardUnit>mole</standardUnit>
+ </unit>
+ <precision>1</precision>
+ <numericDomain> <numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1349459954082" scope="document"> <attributeName>StandardSample</attributeName>
+ <attributeDefinition>Denotes if sampling part of the standard weekly sampling and stations</attributeDefinition>
+ <measurementScale> <nominal> <nonNumericDomain> <enumeratedDomain enforced="yes"> <codeDefinition> <code>yes</code>
+ <definition>Part of standard sampling, included in average values table</definition>
+ </codeDefinition>
+ <codeDefinition> <code>no</code>
+ <definition>Additional sampling not included in average values table</definition>
+ </codeDefinition>
+ </enumeratedDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1217964900546" scope="document"> <attributeName>Site</attributeName>
+ <attributeDefinition>Site where data were collected</attributeDefinition>
+ <measurementScale> <nominal> <nonNumericDomain> <textDomain> <definition>Site name</definition>
+ </textDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1217964900593" scope="document"> <attributeName>Depth</attributeName>
+ <attributeDefinition>Depth in meters at the site</attributeDefinition>
+ <measurementScale> <ratio> <unit> <standardUnit>meter</standardUnit>
+ </unit>
+ <precision>0.1</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1217964900609" scope="document"> <attributeName>Secchi</attributeName>
+ <attributeLabel>Secchi Disk Depth</attributeLabel>
+ <attributeDefinition>Secchi disk depth at the site. DOB is disk on the bottom</attributeDefinition>
+ <measurementScale> <ratio> <unit> <standardUnit>meter</standardUnit>
+ </unit>
+ <precision>.01</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ <missingValueCode> <code>DOB</code>
+ <codeExplanation>Disk on bottom</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1217964900625" scope="document"> <attributeName>TDS</attributeName>
+ <attributeLabel>total dissolved solids</attributeLabel>
+ <attributeDefinition>Total dissolved solids in milligrams per liter, taken from an integrated water column sample</attributeDefinition>
+ <measurementScale> <ratio> <unit> <customUnit>mg/L</customUnit>
+ </unit>
+ <precision>0.1</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1349468371383" scope="document"> <attributeName>Alkalinity</attributeName>
+ <attributeLabel>Alkalinity</attributeLabel>
+ <attributeDefinition>Alkalinity from integrated water column sample</attributeDefinition>
+ <measurementScale> <ratio> <unit> <customUnit>microgramsperLiter</customUnit>
+ </unit>
+ <precision>1</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1217964900640" scope="document"> <attributeName>Avg pH</attributeName>
+ <attributeDefinition>Average water column pH</attributeDefinition>
+ <measurementScale> <interval> <unit> <standardUnit>dimensionless</standardUnit>
+ </unit>
+ <precision>.01</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </interval>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1217964900656" scope="document"> <attributeName>Avg Temp</attributeName>
+ <attributeLabel>Average temperature</attributeLabel>
+ <attributeDefinition>Average water column temperature</attributeDefinition>
+ <measurementScale> <ratio> <unit> <standardUnit>celsius</standardUnit>
+ </unit>
+ <precision>0.01</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1217964900671" scope="document"> <attributeName>Avg Cond</attributeName>
+ <attributeLabel>Conductivity</attributeLabel>
+ <attributeDefinition>Average water column conductivity</attributeDefinition>
+ <measurementScale> <ratio> <unit> <customUnit>micromhos/cm</customUnit>
+ </unit>
+ <precision>0.1</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1217964900687" scope="document"> <attributeName>Bottom DO</attributeName>
+ <attributeLabel>Bottom Dissolved Oxygen</attributeLabel>
+ <attributeDefinition>Bottom dissolved oxygen, in mg/L</attributeDefinition>
+ <measurementScale> <ratio> <unit> <customUnit>mg/L</customUnit>
+ </unit>
+ <precision>0.1</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1217964900703" scope="document"> <attributeName>Tot Chl-a</attributeName>
+ <attributeLabel>Total Chlorophyll-a pigment</attributeLabel>
+ <attributeDefinition>Total "Chlorophyll-a" concentration in micrograms per liter, taken from an integrated water column sample.  No phaeopigment correcction applied</attributeDefinition>
+ <measurementScale> <ratio> <unit> <customUnit>microgramsperLiter</customUnit>
+ </unit>
+ <precision>.01</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ <missingValueCode> <code>BDL</code>
+ <codeExplanation>below detection limit 0.2 ug/L</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1217964900718" scope="document"> <attributeName>Chl-a</attributeName>
+ <attributeLabel>Chlorophyll-a</attributeLabel>
+ <attributeDefinition>Chlorophyll-a calculated from integrated water column sample with phaeopigment correction</attributeDefinition>
+ <measurementScale> <ratio> <unit> <customUnit>microgramsperLiter</customUnit>
+ </unit>
+ <precision>.01</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ <missingValueCode> <code>BDL</code>
+ <codeExplanation>below detection limit of 0.2 ug/L</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1349466122400" scope="document"> <attributeName>Phaeopigment</attributeName>
+ <attributeLabel>Phaeopigment</attributeLabel>
+ <attributeDefinition>Phaeopigment calculated from an integrated water sample through acidification</attributeDefinition>
+ <measurementScale> <ratio> <unit> <customUnit>microgramsperLiter</customUnit>
+ </unit>
+ <precision>0.01</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ <missingValueCode> <code>BDL</code>
+ <codeExplanation>below detection limit 0.2 ug/L, often negative values</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1217964900734" scope="document"> <attributeName>SRP</attributeName>
+ <attributeLabel>Soluble Reactive Phosphorous</attributeLabel>
+ <attributeDefinition>Soluble reactive phosphorous, taken from an integrated water column sample</attributeDefinition>
+ <measurementScale> <ratio> <unit> <customUnit>microgramsperLiter</customUnit>
+ </unit>
+ <precision>0.1</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ <missingValueCode> <code>BDL</code>
+ <codeExplanation>Below detection limit 0.1 ug/L</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1217964900750" scope="document"> <attributeName>TP</attributeName>
+ <attributeLabel>Total Phosphorus</attributeLabel>
+ <attributeDefinition>Total phosphorus in micrograms per liter, taken from an integrated water column sample</attributeDefinition>
+ <measurementScale> <ratio> <unit> <customUnit>microgramsperLiter</customUnit>
+ </unit>
+ <precision>0.1</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ <missingValueCode> <code>BDL</code>
+ <codeExplanation>Below detection limit 0.1 ug/L</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1217964900765" scope="document"> <attributeName>TFP</attributeName>
+ <attributeLabel>Total Filterable Phosphorus</attributeLabel>
+ <attributeDefinition>Total filterable phosphorus at the site, in micrograms per liter, from an integrated water column sample</attributeDefinition>
+ <measurementScale> <ratio> <unit> <customUnit>microgramsperLiter</customUnit>
+ </unit>
+ <precision>0.1</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ <missingValueCode> <code>BDL</code>
+ <codeExplanation>Below detection limit 0.1 ug/L</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1217964900781" scope="document"> <attributeName>NO3</attributeName>
+ <attributeLabel>Nitrate</attributeLabel>
+ <attributeDefinition>Nitrate in micrograms per Liter, from an integrated water column sample.  After 2009 the value represents NOx (NO3+NO2)</attributeDefinition>
+ <measurementScale> <ratio> <unit> <customUnit>microgramsperLiter</customUnit>
+ </unit>
+ <precision>1</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no value</codeExplanation>
+ </missingValueCode>
+ <missingValueCode> <code>BDL</code>
+ <codeExplanation>Below detection limit 40 ug/L</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1217964900796" scope="document"> <attributeName>NO2</attributeName>
+ <attributeLabel>Nitrite</attributeLabel>
+ <attributeDefinition>Nitrite, in micrograms per Liter, from an integrated  water column sample.  Not done after 2008</attributeDefinition>
+ <measurementScale> <ratio> <unit> <customUnit>microgramsperLiter</customUnit>
+ </unit>
+ <precision>0.1</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ <missingValueCode> <code>BDL</code>
+ <codeExplanation>Below detection limit 0.1 ug/L</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1349466988645" scope="document"> <attributeName>TDN</attributeName>
+ <attributeLabel>Total Dissolved Nitrogen</attributeLabel>
+ <attributeDefinition>Total filterable nitrogen from a integrated water column sample</attributeDefinition>
+ <measurementScale> <ratio> <unit> <customUnit>microgramsperLiter</customUnit>
+ </unit>
+ <precision>1</precision>
+ <numericDomain> <numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ <missingValueCode> <code>BDL</code>
+ <codeExplanation>Below detection limit 105 ug/L</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1349467086161" scope="document"> <attributeName>TPN</attributeName>
+ <attributeLabel>Total Particulate Nitrogen</attributeLabel>
+ <attributeDefinition>Total particulate nitrogen from an integrated water sample</attributeDefinition>
+ <measurementScale> <ratio> <unit> <customUnit>microgramsperLiter</customUnit>
+ </unit>
+ <precision>1</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ <missingValueCode> <code>BDL</code>
+ <codeExplanation>Below detection limit 105 ug/L</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1217964900812" scope="document"> <attributeName>SRSi</attributeName>
+ <attributeLabel>Soluble Reactive Silica</attributeLabel>
+ <attributeDefinition>Soluble reactive silica from an integrated water column sample.  Values are in ug Si, not ug SiO2</attributeDefinition>
+ <measurementScale> <ratio> <unit> <customUnit>microgramsperLiter</customUnit>
+ </unit>
+ <precision>1</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ <missingValueCode> <code>BDL</code>
+ <codeExplanation>Below detection limit 10 ug/L</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1377569330814"><attributeName>InSituChl</attributeName>
+<attributeLabel>In situ chlorophyll</attributeLabel>
+<attributeDefinition>Average water column chlorophyll measured with a Turner fluorometer on the Hydrolab DataSonde 5</attributeDefinition>
+<measurementScale><ratio><unit><standardUnit>microgramsPerLiter</standardUnit>
+</unit>
+<precision>0.01</precision>
+<numericDomain><numberType>real</numberType>
+</numericDomain>
+</ratio>
+</measurementScale>
+<missingValueCode><code>-999</code>
+<codeExplanation>no data</codeExplanation>
+</missingValueCode>
+</attribute>
+ <attribute id="1349467563898" scope="document"> <attributeName>Notes</attributeName>
+ <attributeLabel>Field and analysis notes</attributeLabel>
+ <attributeDefinition>Notes on analysis / field conditions</attributeDefinition>
+ <measurementScale> <nominal> <nonNumericDomain> <textDomain> <definition>Notes from analysis and field sampling such as wind direction and speed</definition>
+ </textDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ <missingValueCode> <code>/</code>
+ <codeExplanation>no notes</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ </attributeList>
+ <numberOfRecords>5282</numberOfRecords>
+ </dataTable>
+ <dataTable id="1217965305812" scope="document"> <entityName>Station Location.csv</entityName>
+ <entityDescription>Latitudes and longitudes in decimal degrees for six standard limnological sampling sites on Oneida Lake, New York</entityDescription>
+ <physical id="1217965303937" scope="document"> <objectName>Station Location.csv</objectName>
+ <size unit="byte">756</size>
+ <dataFormat> <textFormat> <numHeaderLines>1</numHeaderLines>
+ <recordDelimiter>#x0A</recordDelimiter>
+ <attributeOrientation>column</attributeOrientation>
+ <simpleDelimited> <fieldDelimiter>,</fieldDelimiter>
+ </simpleDelimited>
+ </textFormat>
+ </dataFormat>
+ <distribution scope="document"> <online> <url function="download">ecogrid://knb/cbfs.38.9</url>
+ </online>
+ </distribution>
+ </physical>
+ <attributeList> <attribute id="1217965305828" scope="document"> <attributeName>Site</attributeName>
+ <attributeDefinition>Name of standard sampling site</attributeDefinition>
+ <measurementScale> <nominal> <nonNumericDomain> <textDomain> <definition>Site name</definition>
+ </textDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1217965305843" scope="document"> <attributeName>Latitude</attributeName>
+ <attributeDefinition>Latitude of sampling site in decimal degrees</attributeDefinition>
+ <measurementScale> <ratio> <unit> <standardUnit>degree</standardUnit>
+ </unit>
+ <precision>.00001</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1217965305859" scope="document"> <attributeName>Longitude</attributeName>
+ <attributeDefinition>Longitude of sampling site in decimal degrees</attributeDefinition>
+ <measurementScale> <ratio> <unit> <standardUnit>degree</standardUnit>
+ </unit>
+ <precision>.00001</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1349536136819" scope="document"> <attributeName>Depth</attributeName>
+ <attributeDefinition>Bottom Depth at Station, average from 1975 to 2011</attributeDefinition>
+ <measurementScale> <ratio> <unit> <standardUnit>meter</standardUnit>
+ </unit>
+ <precision>0.1</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ </attribute>
+ <attribute id="1349536200722" scope="document"> <attributeName>Standard</attributeName>
+ <attributeDefinition>Defined as a standard site</attributeDefinition>
+ <measurementScale> <nominal> <nonNumericDomain> <enumeratedDomain enforced="yes"> <codeDefinition> <code>yes</code>
+ <definition>One of the five standard sites</definition>
+ </codeDefinition>
+ <codeDefinition> <code>no</code>
+ <definition>Additional sites used in some years</definition>
+ </codeDefinition>
+ </enumeratedDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1349536242217" scope="document"> <attributeName>Notes</attributeName>
+ <attributeDefinition>Years the station was sampled</attributeDefinition>
+ <measurementScale> <nominal> <nonNumericDomain> <textDomain> <definition>Years of sampling</definition>
+ </textDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ </attributeList>
+ <numberOfRecords>12</numberOfRecords>
+ </dataTable>
+ <dataTable id="1349539048967" scope="document"> <entityName>Weekly Average Oneida Limnology.csv</entityName>
+ <entityDescription>Averages of standard sampling stations measurements of limnological parameters in Oneida Lake 1975 to 2011</entityDescription>
+ <physical scope="document"> <objectName>WeeklyDataBase.csv</objectName>
+ <dataFormat> <textFormat> <attributeOrientation>column</attributeOrientation>
+ <simpleDelimited> <fieldDelimiter>,</fieldDelimiter>
+ </simpleDelimited>
+ </textFormat>
+ </dataFormat>
+  <distribution><online><url>ecogrid://knb/cbfs.123.8</url>
+</online>
+</distribution>
+</physical>
+ <attributeList> <attribute id="1349539048968" scope="document"> <attributeName>DateString</attributeName>
+ <attributeLabel>Date</attributeLabel>
+ <attributeDefinition>Date of the first sampling for each week</attributeDefinition>
+ <measurementScale> <dateTime> <formatString>YYYYMMDD</formatString>
+ <dateTimePrecision>1 day</dateTimePrecision>
+ </dateTime>
+ </measurementScale>
+ </attribute>
+ <attribute id="1349539048969" scope="document"> <attributeName>Year_Week</attributeName>
+ <attributeLabel>Year_Week</attributeLabel>
+ <attributeDefinition>Years and week number of sampling week</attributeDefinition>
+ <measurementScale> <nominal> <nonNumericDomain> <textDomain> <definition>YYYY/Week number</definition>
+ </textDomain>
+ </nonNumericDomain>
+ </nominal>
+ </measurementScale>
+ </attribute>
+ <attribute id="1377573349044"><attributeName>Date</attributeName>
+ <attributeLabel>Date</attributeLabel>
+ <attributeDefinition>Date number</attributeDefinition>
+ <measurementScale><dateTime><formatString>MM/DD/YYYY</formatString>
+ <dateTimePrecision>1</dateTimePrecision>
+ </dateTime>
+ </measurementScale>
+ </attribute>
+ <attribute id="1349539048970" scope="document"><attributeName>NumSites</attributeName>
+<attributeLabel>Number of sites included in the average</attributeLabel>
+<attributeDefinition>Number of sites included in the average.  From 2010, several sites were pooled before analysis</attributeDefinition>
+<measurementScale><ratio><unit><standardUnit>dimensionless</standardUnit>
+</unit>
+<precision>1</precision>
+<numericDomain><numberType>natural</numberType>
+</numericDomain>
+</ratio>
+</measurementScale>
+</attribute>
+ <attribute id="1349539048971" scope="document"> <attributeName>Secchi</attributeName>
+ <attributeLabel>Secchi Disk Depth</attributeLabel>
+ <attributeDefinition>Average Secchi disk depth.  Only deep stations included (Buoy 109, 117, 125 and Shackelton Point)</attributeDefinition>
+ <measurementScale> <ratio> <unit> <standardUnit>meter</standardUnit>
+ </unit>
+ <precision>0.01</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1349539048972" scope="document"> <attributeName>Temp</attributeName>
+ <attributeLabel>Average water column temperature</attributeLabel>
+ <attributeDefinition>Average water column temperature for the four deep sites (Buoy 109, 117, 125 and Shackelton Point)</attributeDefinition>
+ <measurementScale> <interval> <unit> <standardUnit>celsius</standardUnit>
+ </unit>
+ <precision>0.01</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </interval>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1349539048973" scope="document"> <attributeName>BDO&lt;1</attributeName>
+ <attributeLabel>Bottom Dissolved Oxygen less than 1 mg/L</attributeLabel>
+ <attributeDefinition>Number of sites with bottom dissolved oxygen less than 1 mg/L</attributeDefinition>
+ <measurementScale> <ratio> <unit> <standardUnit>dimensionless</standardUnit>
+ </unit>
+ <precision>1</precision>
+ <numericDomain> <numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1349539048974" scope="document"> <attributeName>BDO&lt;3</attributeName>
+ <attributeLabel>Bottom Dissolved Oxygen less than 3 mg/L</attributeLabel>
+ <attributeDefinition>Number of sites with bottom dissolved oxygen less than 3 mg/L</attributeDefinition>
+ <measurementScale> <ratio> <unit> <standardUnit>dimensionless</standardUnit>
+ </unit>
+ <precision>1</precision>
+ <numericDomain> <numberType>natural</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1349539048975" scope="document"><attributeName>TDS</attributeName>
+<attributeLabel>Total Dissolved Solids</attributeLabel>
+<attributeDefinition>Total Dissolved Solids, average of Shackelton Point and Buoy 125 sites for most weeks</attributeDefinition>
+<measurementScale><ratio><unit><customUnit>mg/L</customUnit>
+</unit>
+<precision>1</precision>
+<numericDomain><numberType>real</numberType>
+</numericDomain>
+</ratio>
+</measurementScale>
+<missingValueCode><code>-999</code>
+<codeExplanation>no data</codeExplanation>
+</missingValueCode>
+</attribute>
+ <attribute id="1349539048976" scope="document"> <attributeName>pH</attributeName>
+ <attributeLabel>pH</attributeLabel>
+ <attributeDefinition>Average water column pH</attributeDefinition>
+ <measurementScale> <ratio> <unit> <standardUnit>dimensionless</standardUnit>
+ </unit>
+ <precision>0.01</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1349539048977" scope="document"><attributeName>Alkalinity</attributeName>
+<attributeLabel>Alkalinity</attributeLabel>
+<attributeDefinition>Average alkalinity mostly from Shackelton Point and Buoy 125</attributeDefinition>
+<measurementScale><ratio><unit><customUnit>microgramsperLiter</customUnit>
+</unit>
+<precision>1</precision>
+<numericDomain><numberType>real</numberType>
+</numericDomain>
+</ratio>
+</measurementScale>
+<missingValueCode><code>-999</code>
+<codeExplanation>no data</codeExplanation>
+</missingValueCode>
+</attribute>
+ <attribute id="1349539048978" scope="document"><attributeName>Cond</attributeName>
+<attributeLabel>Conductivity</attributeLabel>
+<attributeDefinition>Average water column conductivity</attributeDefinition>
+<measurementScale><ratio><unit><customUnit>micromhos/cm</customUnit>
+</unit>
+<precision>0.1</precision>
+<numericDomain><numberType>real</numberType>
+</numericDomain>
+</ratio>
+</measurementScale>
+<missingValueCode><code>-999</code>
+<codeExplanation>no data</codeExplanation>
+</missingValueCode>
+</attribute>
+ <attribute id="1349539048979" scope="document"> <attributeName>Tot Chl</attributeName>
+ <attributeLabel>Total chlorophyll</attributeLabel>
+ <attributeDefinition>Average of total chlorophyll for standard sites</attributeDefinition>
+ <measurementScale> <ratio> <unit> <customUnit>microgramsperLiter</customUnit>
+ </unit>
+ <precision>0.01</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1349539048980" scope="document"> <attributeName>Chl-a</attributeName>
+ <attributeLabel>Chlorophyll-a</attributeLabel>
+ <attributeDefinition>Average chlorphyll-a calculated by subtracting phaeopigments</attributeDefinition>
+ <measurementScale> <ratio> <unit> <customUnit>microgramsperLiter</customUnit>
+ </unit>
+ <precision>0.01</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1349539048981" scope="document"> <attributeName>SRP</attributeName>
+ <attributeLabel>Soluble Reactive Phosphorus</attributeLabel>
+ <attributeDefinition>Average SRP</attributeDefinition>
+ <measurementScale> <ratio> <unit> <customUnit>microgramsperLiter</customUnit>
+ </unit>
+ <precision>0.1</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1349539048982" scope="document"> <attributeName>TFP</attributeName>
+ <attributeLabel>Total Filterable Phosphorus</attributeLabel>
+ <attributeDefinition>Average weekly TFP</attributeDefinition>
+ <measurementScale> <ratio> <unit> <customUnit>microgramsperLiter</customUnit>
+ </unit>
+ <precision>0.1</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1349541385496" scope="document"> <attributeName>TP</attributeName>
+ <attributeLabel>Total Phosphorus</attributeLabel>
+ <attributeDefinition>Weekly average total phosphorus</attributeDefinition>
+ <measurementScale> <ratio> <unit> <customUnit>microgramsperLiter</customUnit>
+ </unit>
+ <precision>0.1</precision>
+ <numericDomain> <numberType>real</numberType>
+ </numericDomain>
+ </ratio>
+ </measurementScale>
+ <missingValueCode> <code>-999</code>
+ <codeExplanation>no data</codeExplanation>
+ </missingValueCode>
+ </attribute>
+ <attribute id="1349539048983" scope="document"><attributeName>NOx</attributeName>
+<attributeLabel>Nitrate and Nitrite</attributeLabel>
+<attributeDefinition>Weekly average of nitrates and nitrites</attributeDefinition>
+<measurementScale><ratio><unit><customUnit>microgramsperLiter</customUnit>
+</unit>
+<precision>1</precision>
+<numericDomain><numberType>real</numberType>
+</numericDomain>
+</ratio>
+</measurementScale>
+<missingValueCode><code>-999</code>
+<codeExplanation>no data</codeExplanation>
+</missingValueCode>
+</attribute>
+ <attribute id="1349539048984" scope="document"><attributeName>TDN</attributeName>
+<attributeLabel>Total Dissolved Nitrogen</attributeLabel>
+<attributeDefinition>Weekly average total dissolved nitrogen</attributeDefinition>
+<measurementScale><ratio><unit><customUnit>microgramsperLiter</customUnit>
+</unit>
+<precision>1</precision>
+<numericDomain><numberType>real</numberType>
+</numericDomain>
+</ratio>
+</measurementScale>
+<missingValueCode><code>-999</code>
+<codeExplanation>no data</codeExplanation>
+</missingValueCode>
+</attribute>
+ <attribute id="1349539048985" scope="document"><attributeName>TPN</attributeName>
+<attributeLabel>Total Particulate Nitrogen</attributeLabel>
+<attributeDefinition>Weekly average total particulate nitrogen</attributeDefinition>
+<measurementScale><ratio><unit><customUnit>microgramsperLiter</customUnit>
+</unit>
+<precision>1</precision>
+<numericDomain><numberType>real</numberType>
+</numericDomain>
+</ratio>
+</measurementScale>
+<missingValueCode><code>-999</code>
+<codeExplanation>no data</codeExplanation>
+</missingValueCode>
+</attribute>
+ <attribute id="1349539048986" scope="document"><attributeName>SRSi</attributeName>
+<attributeLabel>Soluble Reactive Silica</attributeLabel>
+<attributeDefinition>Weekly average SRSi Note unit in ug Si, not ug SiO2</attributeDefinition>
+<measurementScale><ratio><unit><customUnit>microgramsperLiter</customUnit>
+</unit>
+<precision>1</precision>
+<numericDomain><numberType>real</numberType>
+</numericDomain>
+</ratio>
+</measurementScale>
+<missingValueCode><code>-999</code>
+<codeExplanation>no data</codeExplanation>
+</missingValueCode>
+</attribute>
+ </attributeList>
+ </dataTable>
+ </dataset>
+ <additionalMetadata> <metadata> <unitList> <unit id="mg/L" name="mg/L" parentSI="cubicCentimetersPerCubicCentimeters" unitType="volumePerVolume"> <description>milligrams per Liter</description>
+ </unit>
+ </unitList>
+ </metadata>
+ </additionalMetadata>
+ <additionalMetadata> <metadata> <unitList> <unit id="micromhos/cm" name="micromhos/cm" parentSI="siemen" unitType="conductance"> <description>micromhos per centimeter</description>
+ </unit>
+ </unitList>
+ </metadata>
+ </additionalMetadata>
+ <additionalMetadata> <metadata> <unitList> <unit id="microgramsperLiter" name="microgramsperLiter" parentSI="cubicCentimetersPerCubicCentimeters" unitType="volumePerVolume"> <description>microgramsperLiter</description>
+ </unit>
+ </unitList>
+ </metadata>
+ </additionalMetadata>
+ <additionalMetadata> <metadata> <enityWizard> <tracingChange>true</tracingChange>
+ <index>4</index>
+ </enityWizard>
+ </metadata>
+ </additionalMetadata>
+ </eml:eml>

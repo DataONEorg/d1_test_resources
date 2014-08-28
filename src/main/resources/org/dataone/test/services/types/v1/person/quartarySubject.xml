@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<d1:person xmlns:d1="http://ns.dataone.org/service/types/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <subject>CN=TheDude,O=Test,C=US,DC=cilogon,DC=org</subject>
+    <givenName>The</givenName>
+    <familyName>Dude</familyName>
+    <email>The.Dude@test.org</email>
+    <equivalentIdentity>CN=Jeff Lebowski,O=Test,C=US,DC=cilogon,DC=org</equivalentIdentity>
+    <verified>false</verified>
+</d1:person>
