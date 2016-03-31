@@ -153,7 +153,7 @@ public class ApacheDSSuiteRunner extends Suite {
             long revision = 0L;
             DirectoryService directoryService = null;
 
-            if (classDS != null) {
+            if (classDS != null && classDS.isStarted()) {
                 // We have a class DS defined, update it
                 directoryService = classDS;
 

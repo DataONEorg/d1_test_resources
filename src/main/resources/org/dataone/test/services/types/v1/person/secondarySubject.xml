@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <d1:person xmlns:d1="http://ns.dataone.org/service/types/v1"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <subject>CN=Jeff Lebowski,O=Test,C=US,DC=cilogon,DC=org</subject>
-    <givenName>Jeff</givenName>
-    <familyName>Lebowski</familyName>
-    <email>Jeff.Lebowskie@test.org</email>
-    <isMemberOf>CN=Southern Cal Bowling League,O=Test,C=US,DC=cilogon,DC=org</isMemberOf>
-    <equivalentIdentity>CN=TheDude,0=Test,C=US,DC=cilogon,DC=org</equivalentIdentity>
+    <subject>CN=Chen Lan,O=Test,C=US,DC=cilogon,DC=org</subject>
+    <givenName>Lan</givenName>
+    <familyName>Chen</familyName>
+    <email>Chen.Lan@test.org</email>
+    <equivalentIdentity>CN=Lan Chen,O=Test,C=US,DC=cilogon,DC=org</equivalentIdentity>
     <verified>true</verified>
 </d1:person>

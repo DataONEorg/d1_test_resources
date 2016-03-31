@@ -3,9 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package org.dataone.test.apache.directory.server;
-
 
 import java.util.HashMap;
 import java.util.Map;
@@ -15,21 +13,27 @@ import javax.naming.directory.Attributes;
 import javax.naming.directory.SearchControls;
 import javax.naming.directory.SearchResult;
 import javax.naming.ldap.LdapContext;
-import org.junit.Assert;
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 /**
  *
  * @author waltz
  */
-public class DSSuiteCase2TestUnit {
+public class DSSuiteCase2TestUnit extends BaseTestContext {
+
     private static final Logger log = LoggerFactory.getLogger(DSSuiteCase2TestUnit.class);
+
+    @Autowired
+    @Qualifier("ldapContext")
+    private LdapContext ldapCtx;
+
     @Test
-    public void testNodeSearch() throws Exception{
-        LdapContext ldapCtx = DSContext.getDefaultContext();
+    public void testNodeSearch() throws Exception {
 
         final SearchControls searchControls = new SearchControls();
         searchControls.setSearchScope(SearchControls.SUBTREE_SCOPE);
@@ -45,7 +49,7 @@ public class DSSuiteCase2TestUnit {
             SearchResult si = results.next();
             String entryDN = si.getNameInNamespace();
 
-                //return dn;
+            //return dn;
             // or we could double check
             // the key/value pairs of an ldap entry
             HashMap<String, String> attributesMap = new HashMap<String, String>();

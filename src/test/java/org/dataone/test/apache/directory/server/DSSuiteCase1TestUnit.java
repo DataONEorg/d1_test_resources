@@ -10,35 +10,34 @@ import java.util.Map;
 import javax.naming.NamingEnumeration;
 import javax.naming.directory.Attribute;
 import javax.naming.directory.Attributes;
-import javax.naming.directory.DirContext;
 import javax.naming.directory.SearchControls;
 import javax.naming.directory.SearchResult;
 import javax.naming.ldap.LdapContext;
-import org.apache.directory.server.integ.ServerIntegrationUtils;
-import org.junit.Assert;
 import static org.junit.Assert.assertTrue;
-import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 /**
  *
  * @author waltz
  */
-public class DSSuiteCase1TestUnit {
+public class DSSuiteCase1TestUnit extends BaseTestContext {
 
     private static final Logger log = LoggerFactory.getLogger(DSSuiteCase1TestUnit.class);
+    @Autowired
+    @Qualifier("ldapContext")
+    private LdapContext ldapCtx;
 
     @Test
     public void testPrincipalSearch() throws Exception {
 
-        LdapContext ldapCtx = DSContext.getDefaultContext();
-
         final SearchControls searchControls = new SearchControls();
         searchControls.setSearchScope(SearchControls.SUBTREE_SCOPE);
 
-        NamingEnumeration<SearchResult> results = ldapCtx.search("dc=org", "(cn=Test1)", searchControls);
+        NamingEnumeration<SearchResult> results = ldapCtx.search("dc=org", "(cn=TestONE)", searchControls);
         assertTrue(results.hasMore());
 
 //		SearchResult firstResultItem = results.next();
@@ -49,7 +48,7 @@ public class DSSuiteCase1TestUnit {
             SearchResult si = results.next();
             String entryDN = si.getNameInNamespace();
 
-                //return dn;
+            //return dn;
             // or we could double check
             // the key/value pairs of an ldap entry
             HashMap<String, String> attributesMap = new HashMap<String, String>();
@@ -63,9 +62,9 @@ public class DSSuiteCase1TestUnit {
             }
             allEntriesMap.put(entryDN, attributesMap);
         }
-        // Confirm that there are 2 entries
-        assertTrue(allEntriesMap.size() == 2);
+        // Confirm that there is 1 entry
+        assertTrue(allEntriesMap.size() == 1);
         log.info("AllEntrys = " + allEntriesMap.size());
-        
+
     }
 }

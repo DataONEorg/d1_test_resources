@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <d1:person xmlns:d1="http://ns.dataone.org/service/types/v1"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <subject>CN=Walter Sobchak,O=Test,C=US,DC=cilogon,DC=org</subject>
-    <givenName>Walter</givenName>
-    <familyName>Sobchak</familyName>
-    <email>Walter.Sobchak@test.org</email>
-    <isMemberOf>CN=Southern Cal Bowling League,O=Test,C=US,DC=cilogon,DC=org</isMemberOf>
+    <subject>CN=Victor Salas,O=Test,C=US,DC=cilogon,DC=org</subject>
+    <givenName>Victor</givenName>
+    <familyName>Salas</familyName>
+    <email>Victor.Salas@test.org</email>
     <verified>false</verified>
 </d1:person>

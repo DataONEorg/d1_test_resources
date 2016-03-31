@@ -6,34 +6,53 @@ dn: o=Test,c=US,dc=cilogon,dc=org
 objectClass: organization
 o: Test
 
-dn: cn=Test1,o=Test,c=US,dc=cilogon,dc=org
-mail: Test1@nowhere.com
-givenName: Test1
+dn: cn=TestONE,o=Test,c=US,dc=cilogon,dc=org
+mail: TestONE@test.org
+givenName: TestONE
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
 objectClass: inetOrgPerson
 objectClass: d1Principal
 sn: CILogonTest
-cn: Test1
+cn: TestONE
 isVerified: TRUE
 
-dn: c=US,dc=dataone,dc=org
-objectClass: country
-c: US
 
-dn: o=Test,c=US,dc=dataone,dc=org
-objectClass: organization
-o: Test
-
-dn: cn=Test1,o=Test,c=US,dc=dataone,dc=org
-mail: Test1@now.here.com
-givenName: Test1
+dn: cn=Chen Lan,o=Test,c=US,dc=cilogon,dc=org
+mail: Chen.Lan@test.org
+givenName: Lan
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
 objectClass: inetOrgPerson
 objectClass: d1Principal
-sn: DataONETest
-cn: Test1
+sn: Chen
+cn: Chen Lan
 isVerified: TRUE
+equivalentIdentity: CN=Lan Chen,O=Test,C=US,DC=cilogon,DC=org
+
+dn: cn=Victor Salas,o=Test,c=US,dc=cilogon,dc=org
+mail: Victor.Salas@test.org
+givenName: Victor
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: d1Principal
+sn: Salas
+cn: Victor Salas
+isVerified: FALSE
+
+dn: cn=Lan Chen,o=Test,c=US,dc=cilogon,dc=org
+mail: Lan.Chen@test.org
+givenName: Lan
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: d1Principal
+sn: Chen
+cn: Lan Chen
+isVerified: TRUE
+equivalentIdentity: CN=Chen Lan,O=Test,C=US,DC=cilogon,DC=org

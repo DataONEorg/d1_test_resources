@@ -25,9 +25,8 @@
         </spring:property>
     </spring:bean>
 
-<!--    <context:component-scan base-package="org.dataone.test.spring" /> -->
-    
-    <spring:bean id="readNodeRecords" class="org.dataone.test.services.types.v1.node.NodeRecords" />
- 
+    <spring:bean id="dsContext" class="org.dataone.test.apache.directory.server.DSContext" factory-method="getDefaultContext">
+        <spring:qualifier value="ldapContext" />
+    </spring:bean>
 
 </spring:beans>
