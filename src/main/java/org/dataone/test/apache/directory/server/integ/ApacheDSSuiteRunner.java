@@ -50,7 +50,15 @@ import org.junit.runners.model.RunnerBuilder;
  * applied to a Junit suite of tests. This allows for ApacheDS to be setup and shutdown and run only once for multiple
  * junit test classes in a java component rather than having to setup and shutdown ApacheDS for each class executed.
  *
- *
+ * REMEMBER TO INCLUDE IN pom.xml
+             <plugin>
+               <groupId>org.apache.felix</groupId>
+               <artifactId>maven-bundle-plugin</artifactId>
+               <inherited>true</inherited>
+               <extensions>true</extensions>
+            </plugin>
+ * 
+ * Also, always set the scope of this artifact to test!
  * @author waltz
  * @see org.dataone.test.apache.directory.server.ApacheDirectorySuiteTest
  *

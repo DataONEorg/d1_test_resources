@@ -2,6 +2,7 @@ dn: dc=org
 objectclass: dcObject
 objectclass: organization
 o: Organization
+administrativeRole: accessControlSpecificArea
 dc: org
  
 
@@ -19,15 +20,15 @@ o: CILogon
 administrativeRole: accessControlSpecificArea
 dc: cilogon
 
-dn: cn=dataoneAuthorizationRequirementsACISubentry,dc=dataone,dc=org
+dn: cn=orgAuthorizationRequirementsACISubentry,dc=org
 objectclass: top
 objectclass: subentry
 objectclass: accessControlSubentry
-cn: dataoneAuthorizationRequirementsACISubentry
+cn: orgAuthorizationRequirementsACISubentry
 subtreeSpecification: {}
 prescriptiveACI: {
-    identificationTag "d1DirectoryManagerFullAccessACI",
-    precedence 11,
+    identificationTag "orgDirectoryManagerFullAccessACI",
+    precedence 10,
     authenticationLevel simple,
     itemOrUserFirst userFirst:
     {
@@ -54,40 +55,7 @@ prescriptiveACI: {
     } 
  }
 
-dn: cn=cilogonAuthorizationRequirementsACISubentry,dc=cilogon,dc=org
-objectclass: top
-objectclass: subentry
-objectclass: accessControlSubentry
-cn: cilogonAuthorizationRequirementsACISubentry
-subtreeSpecification: {}
-prescriptiveACI: {
-    identificationTag "ciDirectoryManagerFullAccessACI",
-    precedence 11,
-    authenticationLevel simple,
-    itemOrUserFirst userFirst:
-    {
-        userClasses
-        {
-            name { "cn=admin,dc=dataone,dc=org" }
-        },
-        userPermissions
-        { 
-            {
-                protectedItems
-                {
-                    entry, allUserAttributeTypesAndValues
-                },
-                grantsAndDenials
-                {
-                    grantAdd, grantDiscloseOnError, grantRead,
-                    grantRemove, grantBrowse, grantExport, grantImport,
-                    grantModify, grantRename, grantReturnDN,
-                    grantCompare, grantFilterMatch, grantInvoke
-                } 
-            }
-        }
-    } 
- }
+
 
 dn: cn=admin,dc=dataone,dc=org
 objectClass: uidObject
