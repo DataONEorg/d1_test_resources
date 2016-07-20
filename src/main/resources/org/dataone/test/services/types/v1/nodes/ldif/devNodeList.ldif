@@ -10,7 +10,7 @@ d1NodeState: up
 d1NodeType: cn
 d1NodeApproved: TRUE
 subject: cn=urn:node:testcn,dc=dataone,dc=org
-d1NodeContactSubject: cn=Robert P Waltz A904,o=Google,c=US,dc=cilogon,dc=org
+d1NodeContactSubject: cn=TestONE,o=Test,c=US,dc=cilogon,dc=org
 objectclass: device
 objectclass: d1Node
 
@@ -46,6 +46,20 @@ d1NodeServiceVersion: v1
 d1NodeServiceAvailable: TRUE
 objectclass: d1NodeService
 
+dn: d1ServiceMethodName=verifyAccount,d1NodeServiceId=CNIdentity-v1,cn=urn:node:testcn,dc=dataone,dc=org
+d1NodeServiceId: CNIdentity-v1
+d1NodeId: urn:node:testcn
+d1ServiceMethodName: verifyAccount
+d1AllowedSubject: CN=TestONE,O=Test,C=US,DC=cilogon,DC=org
+objectclass: d1ServiceMethodRestriction
+
+dn: d1ServiceMethodName=mapIdentity,d1NodeServiceId=CNIdentity-v1,cn=urn:node:testcn,dc=dataone,dc=org
+d1NodeServiceId: CNIdentity-v1
+d1NodeId: urn:node:testcn
+d1ServiceMethodName: mapIdentity
+d1AllowedSubject: CN=TestONE,O=Test,C=US,DC=cilogon,DC=org
+objectclass: d1ServiceMethodRestriction
+
 dn: d1NodeServiceId=CNReplication-v1,cn=urn:node:testcn,dc=dataone,dc=org
 d1NodeServiceId: CNReplication-v1
 d1NodeId: urn:node:testcn
@@ -75,7 +89,7 @@ d1NodeState: up
 d1NodeType: mn
 d1NodeApproved: TRUE
 subject: cn=urn:node:testmn,dc=dataone,dc=org
-d1NodeContactSubject: cn=Robert P Waltz A904,o=Google,c=US,dc=cilogon,dc=org
+d1NodeContactSubject: cn=TestONE,o=Test,c=US,dc=cilogon,dc=org
 d1NodeLastHarvested: 1900-01-01T00:00:00Z
 d1NodeLastCompleteHarvest: 1900-01-01T00:00:00Z
 d1NodeSynSchdSec: 0

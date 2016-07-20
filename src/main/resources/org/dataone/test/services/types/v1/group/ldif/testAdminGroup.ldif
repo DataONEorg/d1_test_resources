@@ -1,0 +1,7 @@
+dn: CN=Test Admin Group,DC=dataone,DC=org
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: Test Admin Group
+uniqueMember: CN=TestONE,O=Test,C=US,DC=cilogon,DC=org
+uniqueMember: CN=Victor Salas,O=Test,C=US,DC=cilogon,DC=org
+owner: CN=TestONE,O=Test,C=US,DC=cilogon,DC=org

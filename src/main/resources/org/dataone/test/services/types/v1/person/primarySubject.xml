@@ -1,10 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<?xml version="1.0" encoding="UTF-8"?>
 <d1:person xmlns:d1="http://ns.dataone.org/service/types/v1"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <subject>CN=TestONE,O=Test,C=US,DC=cilogon,DC=org</subject>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<d1:group xmlns:d1="http://ns.dataone.org/service/types/v1">
+    <subject>CN=Test Admin Group,DC=dataone,DC=org</subject>
+    <groupName>Test Admin Group</groupName>
+    <hasMember>CN=TestONE,O=Test,C=US,DC=cilogon,DC=org</hasMember>
+    <hasMember>CN=Victor Salas,O=Test,C=US,DC=cilogon,DC=org</hasMember>
+    <rightsHolder>CN=TestONE,O=Test,C=US,DC=cilogon,DC=org</rightsHolder>
+</d1:group>
