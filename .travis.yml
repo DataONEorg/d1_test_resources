@@ -13,7 +13,7 @@ env:
   - secure: akj5uyXsYfqu0/66swLqSBvQHcayA6T4TGWz5yMJtJrAWj8CV8O2u6ECRFcpvi0Qf5wj7GGJSLJ40ZoAFO3VwKssQr0LdKHGM29oJz0yIZKzwZOE40uE7jfJ/X0sRzyxm0ij5QRBSQM7XhiEKgK1Q5ugCOKRphsJTnRD6bCJyuAFQSn1/a8PuvcQtYqE8RvR220/jkcuJjFtBtErrbLnAyEkHnCABm5IC7aHqXLnQna2Qmlfij1J5bm5diYQYXreW4A/A21EK4hLnfeFtCntnvdctExv5bayJc8KZLZM7akasVe9+GNSFU5KasJ6hzXG8k1W0Y0CXVRzAkBsKH3SBuos/rsT2AcFLxzCCLfkEYI82+ig/q/NIIcB06PtAS17Jyx/xcLbLvEwNTRH4IJ0F62VvE5GcqslQlhLCIoZMEbTw1A9yysH+6jfPZSJd9o3isn7YYbNcXPNVi8g1sTeY3h28U0ZB+FTLThRt591cyXPEDWhn5RACfmjobd4X8WPuiIiyyVnFXpM7fZeWbaFN8McscMyhO7o4aiml8YtsdCrYfu3X+AxBa3wpJHm4OAf53RHdUsNz3W/9EfmwEqHcl0/g/bNQUWIisQL9TS5qApJ/tMH33XA82/vhsvbrNQFs912kUsnLRlItO14quiFhbmWys44rNOqOvoW7pn7PJk=
   - secure: JdWagC7iWfUHDeHw1Z9HYjpaZoZSYBls3Y85HDwQPQK4P+ogRg9UBgDi1U1N5Dynpf53PQzKmO/5AE/i+MG0zmza30WT5xf48lO0nbR/0dzMoSk5IIgshsmVFsCMobxmsHpMlgMLvZmIM07ZEMCM6GOSZ+kWqnlOddO0DI07gJ4AnQQjJUOTT9l3mYKyaAc9qotEcvoF2ilneMdIO2kzb/WCFq88B1Cq3tuBpMEpBHTQULactRuKlW14JESnYdUQeKde7vBvHNxuC2PnmCcmaRKhna6CLf03rRIP+pkOSpZOad79/GQnqPGznl0U/w1tlai3uEjK2SjAN+yNDFj9mP1YH+9Tm4N5SCnikbuh3GajUPbIAZaM6xOuSoGJQfIp3Z0Kf9zzaqMl3PeCD76v8sl9UMcCCaNuQd53Mw19HF3LHZ+8h/oSehcRoCPpm8kcU4RKgt1xhOh3rhElAlz9pwJk/ZXMY8LDrQaAkZD7BwEUlDj4AdJyFl2bEDu9v/UpXK4S0r+akQUvrgti1awfLd5iQkwSZGfqRqp6PbUaFIu+u0XaEbK7Rn/9pNcQINLIcTUWsNEMWdOsJ3EmaNBnO/1WB5Zy+GlxK5/2yU7csocme+/2+RuJ+gvQaUH7NP/Liq58pgbrxlo7PqZZqkVlqNvIkC/hGJfHpeTvusLaJE8=
 before_deploy:
-- openssl aes-256-cbc -K $encrypted_f094dd62560a_key -iv $encrypted_f094dd62560a_iv
+- openssl aes-256-cbc -K $encrypted_4f0d00631887_key -iv $encrypted_4f0d00631887_iv
   -in .travis/gpg.asc.enc -out .travis/gpg.asc -d
 deploy:
 - skip_cleanup: true
@@ -26,6 +26,3 @@ deploy:
   script: "./deploy"
   on:
     tags: true
-before_install:
-- openssl aes-256-cbc -K $encrypted_4f0d00631887_key -iv $encrypted_4f0d00631887_iv
-  -in gpg.asc.enc -out .travis/gpg.asc -d
