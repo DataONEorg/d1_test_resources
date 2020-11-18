@@ -24,5 +24,6 @@ jobs:
           MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
           MAVEN_PASSWORD: ${{ secrets.OSSRH_TOKEN }}
         run: |
-          mvn deploy --settings "${{ github.workspace }}/.github/mvn-settings.xml"
+          echo "MAVEN USERNAME = ${MAVEN_USERNAME}"
+          mvn deploy -DskipTests=true --settings "${{ github.workspace }}/.github/mvn-settings.xml"
   
