@@ -59,6 +59,17 @@
                     </archive>
                 </configuration>
             </plugin>
+            <plugin>
+              <groupId>org.sonatype.plugins</groupId>
+              <artifactId>nexus-staging-maven-plugin</artifactId>
+              <version>1.6.6</version>
+              <extensions>true</extensions>
+              <configuration>
+                <serverId>ossrh</serverId>
+                <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                <autoReleaseAfterClose>true</autoReleaseAfterClose>
+              </configuration>
+            </plugin>            
         </plugins>
     </build> 
     <dependencies>
@@ -170,10 +181,20 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-   <scm>
-      <url>https://repository.dataone.org/software/cicore</url>
-      <connection>scm:svn:https://repository.dataone.org/software/cicore</connection>
-      <developerConnection>scm:svn:https://repository.dataone.org/software/cicore</developerConnection>
+    <scm>
+      <url>https://github.com/DataONEorg/d1_test_resources</url>
+      <connection>scm:git:ssh://github.com:DataONEorg/d1_test_resources.git</connection>
+      <developerConnection>scm:git:ssh://git@github.com:DataONEorg/d1_test_resources.git</developerConnection>
       <tag>HEAD</tag>
-    </scm>  
+    </scm>
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>    
 </project>
