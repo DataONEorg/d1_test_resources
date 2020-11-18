@@ -24,5 +24,5 @@ jobs:
           MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
           MAVEN_PASSWORD: ${{ secrets.OSSRH_TOKEN }}
         run: |
-          mvn deploy -P publish --settings "${{env.working-directory}}/.github/mvn-settings.xml"
+          mvn deploy -P publish --settings "${{env.GITHUB_WORKSPACE}}/.github/mvn-settings.xml"
   
