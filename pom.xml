@@ -12,6 +12,20 @@
      <spring.version>3.1.4.RELEASE</spring.version>
      <compiler.target.version>1.7</compiler.target.version>
   </properties>
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>DataONE</name>
+      <email>developers@dataone.org</email>
+      <organization>DataONE</organization>
+      <organizationUrl>https://dataone.org/</organizationUrl>
+    </developer>
+  </developers>
   <build>
         <plugins>
             <plugin>
@@ -59,6 +73,14 @@
                     </archive>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                      <excludePackageNames>org.dataone.test.*</excludePackageNames>
+                </configuration>
+            </plugin>            
             <plugin>
               <groupId>org.sonatype.plugins</groupId>
               <artifactId>nexus-staging-maven-plugin</artifactId>
