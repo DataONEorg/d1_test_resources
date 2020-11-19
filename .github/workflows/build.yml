@@ -1,6 +1,10 @@
-name: Java Build and push to Maven Central
+name: Java Build SNAPSHOT and push to Maven Central
+# 
 
-on: [push]
+on: 
+  push:
+    branches:
+      - develop
 
 jobs:
   build:
