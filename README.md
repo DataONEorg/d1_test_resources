@@ -1,7 +1,6 @@
 # Java development (testing really):
 
-[![Build Status](https://travis-ci.org/DataONEorg/d1_test_resources.svg?branch=master)](https://travis-ci.org/DataONEorg/d1_test_resources)
-
+![Java CI](https://github.com/DataONEorg/d1_test_resources/workflows/Java%20CI/badge.svg)
 
 This maven package is set up as the location for DataONE common test resources
 to be made available for unit and integration tests.  It will be listed as a
