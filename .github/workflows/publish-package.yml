@@ -2,6 +2,10 @@ name: Publish package on release
 # Triggered when a new release is created
 # Build and publish to maven central
 on:
+  workflow_dispatch:  
+  push:
+    tags: 
+      - "v*"
   release:
     types: 
       - created
