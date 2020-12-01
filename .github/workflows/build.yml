@@ -1,7 +1,7 @@
 name: Java Build SNAPSHOT and push to Maven Central
 # 
-
 on: 
+  workflow_dispatch:
   push:
     branches:
       - develop
