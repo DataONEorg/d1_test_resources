@@ -10,7 +10,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <apache.ds.version>2.0.0-M21</apache.ds.version>
     <spring.version>4.3.8.RELEASE</spring.version>
-    <compiler.target.version>1.8</compiler.target.version>
+    <maven.compiler.release>25</maven.compiler.release>
   </properties>
   <licenses>
     <license>
@@ -31,10 +31,6 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>1.7</source>
-          <target>${compiler.target.version}</target>
-        </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.felix</groupId>
