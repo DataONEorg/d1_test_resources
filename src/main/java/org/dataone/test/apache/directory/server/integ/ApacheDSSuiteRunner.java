@@ -76,21 +76,6 @@ public class ApacheDSSuiteRunner extends Suite {
     static Logger logger = Logger.getLogger(ApacheDSSuiteRunner.class);
 
 
-    // The 'service' field in the run tests
-
-    private static final String SET_SERVICE_METHOD_NAME = "setService";
-
-
-    // The 'ldapServer' field in the run tests
-
-    private static final String SET_LDAP_SERVER_METHOD_NAME = "setLdapServer";
-
-
-    // The 'kdcServer' field in the run tests
-
-    private static final String SET_KDC_SERVER_METHOD_NAME = "setKdcServer";
-
-
     // The DirectoryService for this class, if any
 
     private DirectoryService classDS = null;
@@ -245,17 +230,6 @@ public class ApacheDSSuiteRunner extends Suite {
         int minPort = 0;
 
         return minPort;
-    }
-
-    private long getCurrentRevision(DirectoryService dirService) throws Exception {
-        if ((dirService != null) && (dirService.getChangeLog().isEnabled())) {
-            long revision = dirService.getChangeLog().getCurrentRevision();
-            logger.debug("Create revision " + revision);
-
-            return revision;
-        }
-
-        return 0;
     }
 
     private void revert(DirectoryService dirService, long revision) throws Exception {
