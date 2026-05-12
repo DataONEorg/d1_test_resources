@@ -153,7 +153,7 @@ public class ApacheDSSuiteRunner extends Suite {
                 DSAnnotationProcessor.applyLdifs(getDescription(), classDS);
             } else {
                 // No : define a default class DS then
-                DirectoryServiceFactory dsf = DefaultDirectoryServiceFactory.class.newInstance();
+                DirectoryServiceFactory dsf = DefaultDirectoryServiceFactory.class.getDeclaredConstructor().newInstance();
 
                 directoryService = dsf.getDirectoryService();
                 // enable CL explicitly cause we are not using DSAnnotationProcessor
@@ -185,7 +185,7 @@ public class ApacheDSSuiteRunner extends Suite {
             }
 
             // print out information which partition factory we use
-            DirectoryServiceFactory dsFactory = DefaultDirectoryServiceFactory.class.newInstance();
+            DirectoryServiceFactory dsFactory = DefaultDirectoryServiceFactory.class.getDeclaredConstructor().newInstance();
             PartitionFactory partitionFactory = dsFactory.getPartitionFactory();
             logger.debug("Using partition factory " + partitionFactory.getClass().getSimpleName());
 

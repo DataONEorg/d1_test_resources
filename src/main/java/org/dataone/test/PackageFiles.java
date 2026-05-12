@@ -36,7 +36,7 @@ public class PackageFiles {
    * @throws URISyntaxException 
    * @throws IOException 
    */
-  public String[] getFileNameListing(Class clazz, String path) throws URISyntaxException, IOException {
+  public String[] getFileNameListing(Class<?> clazz, String path) throws URISyntaxException, IOException {
       URL dirURL = clazz.getClassLoader().getResource(path);
       if (dirURL != null && dirURL.getProtocol().equals("file")) {
         /* A file path: easy enough */
