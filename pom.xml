@@ -78,15 +78,6 @@
         </configuration>
       </plugin>
       <plugin>
-        <groupId>org.sonatype.central</groupId>
-        <artifactId>central-publishing-maven-plugin</artifactId>
-        <version>0.10.0</version>
-        <extensions>true</extensions>
-        <configuration>
-          <publishingServerId>dataone.org</publishingServerId>
-        </configuration>
-      </plugin>
-      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-gpg-plugin</artifactId>
         <version>1.6</version>
@@ -107,6 +98,13 @@
         </executions>
       </plugin>
     </plugins>
+    <extensions>
+        <extension>
+            <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-ssh-external</artifactId>
+            <version>3.5.3</version>
+        </extension>
+    </extensions>
   </build>
   <dependencies>
     <dependency>
@@ -232,4 +230,13 @@
           </snapshots>
       </repository>
   </repositories>
+    <distributionManagement>
+        <repository>
+            <uniqueVersion>false</uniqueVersion>
+            <id>maven.dataone.org</id>
+            <name>DataONE</name>
+          <url>scpexe://maven.dataone.org/var/www/maven</url>
+            <layout>default</layout>
+        </repository>
+    </distributionManagement>
 </project>
