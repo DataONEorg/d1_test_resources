@@ -1,7 +1,5 @@
 # Java development (testing really):
 
-![Java CI](https://github.com/DataONEorg/d1_test_resources/workflows/Java%20CI/badge.svg)
-
 This maven package is set up as the location for DataONE common test resources
 to be made available for unit and integration tests.  It will be listed as a
 dependency of d1_common_java, for transparent incorporation to java developers
